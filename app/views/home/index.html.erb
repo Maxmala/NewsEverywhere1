@@ -1,0 +1,38 @@
+<h1>NEWS</h1>
+
+	<table>
+	
+
+	<thead>
+		<th>Nom de la source</th>
+		<th>Author</th>
+		<th>titre</th>
+		<th>Description</th>
+	
+	</thead>
+
+	<tbody>
+		<% @all_articles.each do |news|%>
+	<tr>
+	<td><%= news.name %></td>
+	<td><%= news.author %></td>
+	<td><%= news.title %></td>
+	<td><%= news.description %></td>
+	<td><a href= "<%= news.url %>"> <img src="<%= news.urlToImage %>" alt="Image de l'article" > </a></td>
+	<td></td>
+
+</tr>
+<% end %>
+</tbody>
+</table>
+
+
+
+
+	
+
+
+
+
+
+
