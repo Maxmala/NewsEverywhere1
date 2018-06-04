@@ -23,7 +23,7 @@ Ruby on Rails
 
 This application requires:
 
-- Ruby 2.4.1
+- Ruby 2.5.1
 - Rails 5.2.0
 
 Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
