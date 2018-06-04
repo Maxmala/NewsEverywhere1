@@ -4,15 +4,16 @@ class HomeController < ApplicationController
   require 'news-api'
 
   def index
-  	newsapi = News.new("f5bae944f89c4462868275fb3d0a86d6")
-  	@all_articles = newsapi.get_everything(q: 'news',
-                                      
-                                      from: '2018-04-04',
-                                      to: '2018-06-04',
+  	newsapi = News.new(ENV["API_NEWS_KEY"])
+  	@all_articles = newsapi.get_everything(q: 'bitcoin',
+                                      sources: 'bbc-news,the-verge',
+                                      domains: 'bbc.co.uk,techcrunch.com',
+                                      from: '2018-04-01',
+                                      to: '2017-06-04',
                                       language: 'en',
                                       sortBy: 'relevancy',
-                                      page: 10)
-  end
+                                      page: 2)
 
 
+end
 end
