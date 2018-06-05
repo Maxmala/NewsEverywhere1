@@ -12,6 +12,7 @@ class HomeController < ApplicationController
       'apiKey='+ ENV['API_NEWS_KEY']
     req = open(url)
     @response_body = JSON.parse(req.read)
+    EasyTranslate.api_key = ENV['EASY_TRANSLATE']
 
   end
 
