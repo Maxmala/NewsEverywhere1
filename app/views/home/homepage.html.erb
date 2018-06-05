@@ -2,7 +2,9 @@
 <html>
 
 <head>
-	<title>Goggle</title>
+	<title>Map</title>
+
+  <h1>NEWS OF THE WORLD</h1>
 
 </head>
 <body style="background-color: black;">
@@ -104,7 +106,7 @@
     var encodedQuery = encodeURIComponent(query);
     url.push(encodedQuery);
     url.push('&callback=drawMap');
-    url.push('&key=AIzaSyAm9yWCV7JPCTHCJut8whOjARd7pwROFDQ');
+    url.push('&key='+ ENV['GOOGLE_MAP_KEY']);
     script.src = url.join('');
     var body = document.getElementsByTagName('body')[0];
     body.appendChild(script);
@@ -164,7 +166,7 @@
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=ENV['GOGGLE_MAP']&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP_KEY'] %>&callback=myMap"></script>
 
 
 </html>
