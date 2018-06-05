@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   
- 
+ require 'open-uri'
 
   def index
 
@@ -8,7 +8,6 @@ class HomeController < ApplicationController
 
   	
     url = 'https://newsapi.org/v2/top-headlines?'\
-
       'country=us&'\
       'apiKey='+ ENV['API_NEWS_KEY']
     req = open(url)
