@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
+gem 'rest-client'
+gem 'nokogiri'
+gem 'binding_of_caller'
 gem 'dotenv-rails'
 gem 'news-api'
 gem 'forest_liana'
