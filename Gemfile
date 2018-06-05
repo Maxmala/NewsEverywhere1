@@ -1,13 +1,15 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
-gem "binding_of_caller"
+gem 'nokogiri'
+gem 'binding_of_caller'
 gem 'dotenv-rails'
-gem "news-api"
+gem 'news-api'
 gem 'forest_liana'
 gem 'rails', '~> 5.2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
+gem 'json'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'

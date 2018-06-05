@@ -1,35 +1,22 @@
 <h1>NEWS</h1>
 
+	<%= @response_body %>
 
-	<table>
-	
+	<h1>cest fini</h1>
+	<div>
+<% @response_body['articles'].each do |article| %>
+	<%= article["source"]['name'] %> </br> 
+	<%= article["author"] %></br> 
+	<%= article["title"] %></br>
+	<%= article["description"] %></br>
+	<%= article["url"] %></br>
+	<%= article["urlToImage"] %></br>
 
-	<thead>
-		<th>Nom de la source</th>
-		<th>Auteur</th>
-		<th>Titre</th>
-		<th>Description</th>
-	
-	</thead>
-
-	<tbody>
-		<% @all_articles.each do |news|%>
-	<tr>
-	<td><%= news.name %></td>
-	<td><%= news.author %></td>
-	<td><%= news.title %></td>
-	<td><%= news.description %></td>
-	<td><a href= "<%= news.url %>"> <img src="<%= news.urlToImage %>" alt="Image de l'article" > </a></td>
-	<td></td>
-
-</tr>
+	 </br> </br> 
 <% end %>
+</div>
 
 
-</tbody>
-</table>
-	
-<%= @response_body %>
 
 
 	
