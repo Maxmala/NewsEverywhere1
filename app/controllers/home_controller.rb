@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
-  
 
-  
+ require "dotenv/load"
+ require "open-uri"
+
 
   def index
 
