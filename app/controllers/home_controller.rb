@@ -22,6 +22,7 @@ req = open(url)
 @response_body = req.read
 
 
+
 end
 
 def homepage
