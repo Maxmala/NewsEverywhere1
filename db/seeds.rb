@@ -4,6 +4,7 @@
 # Examples:
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+    require "open-uri"
 
 def country
         Country.create(name: "Argentine", shortcode: "ar")
@@ -75,7 +76,41 @@ def country
 	end
 
 	def article
-		
+        #initialisation des api
+		newsapi = News.new(ENV["API_NEWS_KEY"])
+        EasyTranslate.api_key = ENV['EASY_TRANSLATE']
+
+        #
+        @countries = Country.all.pluck(:shortcode)
+        @categories = Category.all.pluck(:name)
+        @countries.each do |shortcode| 
+            @categories.each do |name|
+
+
+                link = 'https://newsapi.org/v2/top-headlines?'\
+                'country=' + shortcode + '&'\
+                'category=' + name + '&'\
+                'apiKey='+ ENV['API_NEWS_KEY']
+                req = open(link)
+                @response_body = JSON.parse(req.read)
+                @response_body['articles'].each do |article|
+                    @source = article["source"]['name']
+                    @author = article["author"]
+                    @description = EasyTranslate.translate(article["description"], :to => :french)  
+                    @url = article["url"]
+                    @urlToImage = article["urlToImage"]
+                    @category_id = Category.find_by(name: name).id
+                    @category_id = Country.find_by(shortcode: shortcode).id
+                    Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
+
+                end
+            end
+
+        end
+   
 	end
+
+
 country
 category
+article

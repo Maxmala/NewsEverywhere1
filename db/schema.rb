@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2018_06_07_124514) do
   create_table "articles", force: :cascade do |t|
     t.string "source"
     t.string "author"
-    t.text "descripion"
+    t.text "description"
     t.text "url"
     t.text "urlToImage"
     t.integer "category_id"
