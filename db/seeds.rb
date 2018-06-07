@@ -78,7 +78,6 @@ def country
 	def article
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY"])
-        EasyTranslate.api_key = ENV['EASY_TRANSLATE']
 
         #
         @countries = Country.all.pluck(:shortcode)
@@ -96,11 +95,11 @@ def country
                 @response_body['articles'].each do |article|
                     @source = article["source"]['name']
                     @author = article["author"]
-                    @description = EasyTranslate.translate(article["description"], :to => :french)  
+                    @description = article["description"] 
                     @url = article["url"]
                     @urlToImage = article["urlToImage"]
                     @category_id = Category.find_by(name: name).id
-                    @category_id = Country.find_by(shortcode: shortcode).id
+                    @country_id = Country.find_by(shortcode: shortcode).id
                     Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
 
                 end
