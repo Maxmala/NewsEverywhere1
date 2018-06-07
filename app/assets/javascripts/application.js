@@ -10,9 +10,42 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery3
-//= require popper
 //= require rails-ujs
+//= require activestorage
 //= require turbolinks
-//= require bootstrap-sprockets
+//= require jquery.min.js
+//= require popper.min.js
+//= require bootstrap.min.js
+//= require slidebar.js
+//= require classie.js
+//= require bootstrap-growl.min.js
+//= require scrollpos-styler.js
+//= require adaptive-backgrounds.js
+//= require jquery.countdown.min.js
+//= require dropzone.min.js
+//= require jquery.easypiechart.min.js
+//= require jquery.fancybox.min.js
+//= require flatpickr.min.js
+//= require flip.min.js
+//= require footer-reveal.min.js
+//= require jquery.gradientify.min.js
+//= require headroom.min.js
+//= require jquery.headroom.min.js
+//= require input-mask.min.js
+//= require instafeed.js
+//= require jquery.countTo.js
+//= require nouislider.min.js
+//= require paraxify.min.js
+//= require select2.min.js
+//= require sticky-kit.min.js
+//= require swiper.min.js
+//= require autosize.min.js
+//= require typeahead.bundle.min.js
+//= require typed.min.js
+//= require vide.min.js
+//= require viewportchecker.min.js
+//= require wow.min.js
+//= require isotope.min.js
+//= require imagesloaded.pkgd.min.js
+//= require boomerang.min.js
 //= require_tree .
