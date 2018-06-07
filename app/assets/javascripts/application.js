@@ -11,62 +11,41 @@
 // about supported directives.
 //
 //= require rails-ujs
-
-
-
-//= require jquery.min
-//= require swiper.min
-//= require popper.min
 //= require activestorage
 //= require turbolinks
-//= require jquery.min
-//= require jquery.themepunch.revolution.min
-//= require autosize.min
-//= require boomerang.min
-
-//= require bootstrap-growl.min
-//= require bootstrap.min
-//= require classie
-//= require dropzone.min
-//= require flatpickr.min
-//= require flip.min
-//= require footer-reveal.min
-//= require headroom.min
-//= require imagesloaded.pkgd.min
-//= require input-mask.min
-//= require instafeed
-//= require isotope.min
-//= require jquery.countdown.min
+//= require jquery.min.js
+//= require popper.min.js
+//= require bootstrap.min.js
+//= require slidebar.js
+//= require classie.js
+//= require bootstrap-growl.min.js
+//= require scrollpos-styler.js
+//= require adaptive-backgrounds.js
+//= require jquery.countdown.min.js
+//= require dropzone.min.js
+//= require jquery.easypiechart.min.js
+//= require jquery.fancybox.min.js
+//= require flatpickr.min.js
+//= require flip.min.js
+//= require footer-reveal.min.js
+//= require jquery.gradientify.min.js
+//= require headroom.min.js
+//= require jquery.headroom.min.js
+//= require input-mask.min.js
+//= require instafeed.js
 //= require jquery.countTo.js
-//= require jquery.easypiechart.min
-//= require jquery.fancybox.min
-//= require jquery.fancybox.min
-//= require jquery.gradientify.min
-//= require jquery.headroom.min
-//= require jquery.themepunch.tools.min
-//= require nouislider.min
-//= require paraxify.min
-
-//= require revolution-slider-shop-home-deco
-//= require revolution.extension.actions.min
-//= require revolution.extension.carousel.min
-//= require revolution.extension.kenburn.min
-//= require revolution.extension.layeranimation.min
-//= require revolution.extension.migration.min
-//= require revolution.extension.navigation.min
-//= require revolution.extension.parallax.min
-//= require revolution.extension.slideanims.min
-//= require revolution.extension.video.min
-//= require scrollpos-styler
-//= require select2.min
-//= require slidebar
-//= require sticky-kit.min
-//= require swiper.min
-//= require typeahead.bundle.min
-//= require typed.min
-//= require vide.min
-//= require viewportchecker.min
-//= require wow.min
-
+//= require nouislider.min.js
+//= require paraxify.min.js
+//= require select2.min.js
+//= require sticky-kit.min.js
+//= require swiper.min.js
+//= require autosize.min.js
+//= require typeahead.bundle.min.js
+//= require typed.min.js
+//= require vide.min.js
+//= require viewportchecker.min.js
+//= require wow.min.js
+//= require isotope.min.js
+//= require imagesloaded.pkgd.min.js
+//= require boomerang.min.js
 //= require_tree .
-
