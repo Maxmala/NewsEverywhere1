@@ -7,7 +7,9 @@ require "open-uri"
 #log the current db
 
 #delete the current db
-
+Country.destroy_all
+Category.destroy_all
+Article.destroy_all
 
 #use the api to update the db
 	def article
