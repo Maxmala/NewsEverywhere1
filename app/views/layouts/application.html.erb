@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= render "layouts/navbar" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "News" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "News" %>">
@@ -18,11 +19,17 @@
 
   <body>
     <header>
-      <%= render 'layouts/navigation' %>
+      <%= yield %>
     </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+     
+      
     </main>
   </body>
+<footer>
+  
+   <%= render "layouts/footer" %>
+   
+</footer>
+ 
 </html>
