@@ -26,7 +26,7 @@ def country
         Country.create(name: "Hong Kong", shortcode: "hk", continent: "Asie")
         Country.create(name: "Hongrie", shortcode: "hu", continent: "Europe")
         Country.create(name: "Inde", shortcode: "in", continent: "Asie")
-        Country.create(name: "Indonesie", shortcode: "id", continent: "Océanie")
+        Country.create(name: "Indonesie", shortcode: "id", continent: "Asie")
         Country.create(name: "Irelande", shortcode: "ie", continent: "Europe")
         Country.create(name: "Israël", shortcode: "il", continent: "Asie")
         Country.create(name: "Italie", shortcode: "it", continent: "Europe")

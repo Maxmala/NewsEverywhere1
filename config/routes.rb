@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'countries/show'
   devise_for :users
   root 'home#homepage'
   get "/index", to: "home#index" , as: "show"
