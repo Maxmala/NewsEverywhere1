@@ -1,0 +1,16 @@
+<h1>NEWS</h1>
+<% Article.find_by(country_id: params[:id]).each do |article| %>
+<div> <%= article.source %>
+	<%= article.author %>
+	
+		<%= EasyTranslate.translate(article.descritpion, :to => :french)  %>
+		<a href="https://translate.google.fr/translate?sl=en&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u=<%= article.url %>&edit-text=&act=url">
+	<%= article.urlToImage %>
+</div>
+<% end %>
+
+
+
+
+
+
