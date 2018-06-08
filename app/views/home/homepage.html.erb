@@ -96,16 +96,16 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-                                            <a href="#">
+                                            <a href="/countries/<%= Country.find_by(name: "Grèce").id %>">
                                                 <img src="<%= asset_path("img-1.jpg") %>">
                                             </a>
                                         </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
-                                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Grèce</a>
+                                                    <a href="/countries/<%= Country.find_by(name: "Grèce").id %>" class="heading heading-4 strong-500 mb-0 c-white">Grèce</a>
                                                     <span class="clearfix"></span>
-                                                    <small class="text-uppercase c-white">11 articles</small>
+                                                    <small class="text-uppercase c-white"><%= Country.find_by(name: "Grèce").id %> articles</small>
                                                 </div>
                                             </div>
                                         </div>
