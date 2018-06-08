@@ -149,6 +149,7 @@ def country
             end
 
         end
+    end
 
         def articleNR
         Article.destroy_all
@@ -185,6 +186,7 @@ def country
             end
 
         end
+    end
 
         def articleSZ
         Article.destroy_all
@@ -223,6 +225,7 @@ def country
         end
    
     end
+
 
 
 country
