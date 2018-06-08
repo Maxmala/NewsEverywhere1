@@ -4,7 +4,8 @@ class CountriesController < ApplicationController
   	#afficher params id
   	@country = Country.find_by(id: params[:id])
   	@name = @country.name
-  	@articles = Article.where(country_id: @country.id)
+  	@articles = @country.articles
+  	@sources = @articles.pluck(:source)
   	
   
 
