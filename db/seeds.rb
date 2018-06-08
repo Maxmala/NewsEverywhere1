@@ -7,6 +7,7 @@
     require "open-uri"
 
 def country
+        Country.destroy_all
         Country.create(name: "Argentine", shortcode: "ar")
         Country.create(name: "Australie", shortcode: "au")
         Country.create(name: "Autriche", shortcode: "at")
@@ -65,6 +66,7 @@ def country
     end
 
 	def category
+        Category.destroy_all
 		Category.create(name: "Business" , nameFr: "Business")
 		Category.create(name: "Entertainment" , nameFr: "Divertissement")
 		Category.create(name: "Health" , nameFr: "Santé")
@@ -76,6 +78,7 @@ def country
 	end
 
 	def article
+        Article.destroy_all
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY"])
 
