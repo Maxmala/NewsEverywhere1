@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get "/index", to: "home#index" , as: "show"
   get "/countries/:id", to:  "countries#show", as: "country"
-
+  resources :devise
   mount ForestLiana::Engine => '/forest'
   resources :home
   
