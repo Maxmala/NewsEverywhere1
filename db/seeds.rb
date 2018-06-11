@@ -78,7 +78,7 @@ def country
 
 
 	def articleAC
-
+        
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY_1"])
 
