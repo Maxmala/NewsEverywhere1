@@ -11,4 +11,5 @@ class Article < ApplicationRecord
   def default_values
   	self.urlToImage ||= "https://cdn.pixabay.com/photo/2011/12/13/14/30/earth-11014_960_720.jpg"
 	end
+
 end
