@@ -5,6 +5,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
     require "open-uri"
+
+
+      
+
+   
+
+
+
       
 def country
         Country.destroy_all
@@ -59,7 +67,7 @@ def country
         Country.create(name: "Turquie", shortcode: "tr", continent: "Asie")
         Country.create(name: "Emirats Arabes Unis ", shortcode: "ae", continent: "Asie")
         Country.create(name: "Ukraine", shortcode: "ua", continent: "Europe")
-        Country.create(name: "Royaume unis", shortcode: "gb", continent: "Europe")
+        Country.create(name: "Royaume Uni", shortcode: "gb", continent: "Europe")
         Country.create(name: "Etats-Unis", shortcode: "us", continent: "Amérique")
         Country.create(name: "Vénézuela", shortcode: "ve", continent: "Amérique")
 

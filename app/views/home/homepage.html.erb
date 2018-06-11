@@ -95,6 +95,7 @@
                             <div class="masonry row row-sm-padding">
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
+
                                         <div class="block-image">
                                             <a href="/countries/<%= Country.find_by(name: "Grèce").id %>">
                                                 <img src="<%= asset_path("img-1.jpg") %>">
@@ -103,16 +104,16 @@
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
-                                                    <a href="/countries/<%= Country.find_by(name: "Grèce").id %>" class="heading heading-4 strong-500 mb-0 c-white">Grèce</a>
+                                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Grèce</a>
                                                     <span class="clearfix"></span>
-                                                    <small class="text-uppercase c-white"><%= Country.find_by(name: "Grèce").id %> articles</small>
+                                                    <small class="text-uppercase c-white"> articles</small>
 
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Grèce").id).length %> Articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +121,7 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-                                            <a href="#">
+                                            <a href="/countries/ <%= Country.find_by(name: "Royaume Uni").id %>">
                                                 <img src="<%= asset_path("img-2.jpg") %>">
                                             </a>
                                         </div>
@@ -137,7 +138,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Royaume Uni").id).length %> Articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +146,7 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-                                            <a href="#">
+                                            <a href="/countries/<%= Country.find_by(name: "Italie").id %>">
                                                 <img src="<%= asset_path("img-3.jpg") %>">
                                             </a>
                                         </div>
@@ -162,7 +163,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Italie").id).length %></a>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +171,7 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-                                            <a href="#">
+                                            <a href="/countries/<%= Country.find_by(name: "France").id %>">
                                                 <img src="<%= asset_path("img-4.jpg") %>">
                                             </a>
                                         </div>
@@ -186,7 +187,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "France").id).length %></a>
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +211,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Royaume Uni").id).length %></a>
                                         </div>
                                     </div>
                                 </div>
