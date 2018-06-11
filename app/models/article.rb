@@ -1,13 +1,14 @@
 class Article < ApplicationRecord
   belongs_to :category
   belongs_to :country
-  attr_accessor :source, :author, :description, :url, :urlToImage, :category_id, :country_id
   validates :description, presence: true
   validates :url, presence: true
-  before_save :default_values
+  after_initialize :default_values
+
+  private
 
   def default_values
-  	self.urlToImage ||= ''
+  	self.urlToImage ||= "https://cdn.pixabay.com/photo/2011/12/13/14/30/earth-11014_960_720.jpg"
   	
   end
 end
