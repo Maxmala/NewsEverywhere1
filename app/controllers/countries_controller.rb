@@ -2,7 +2,8 @@ class CountriesController < ApplicationController
   
   def show
   	#afficher params id
-  	@country = Country.find_by(id: params[:id])
+
+    @country = Country.find_by(id: params[:id])
   	@name = @country.name
   	@articles = @country.articles
   	image
@@ -35,8 +36,6 @@ class CountriesController < ApplicationController
 
   def translate
   	EasyTranslate.api_key = ENV['EASY_TRANSLATE']
-  	
-
   end
 
 
