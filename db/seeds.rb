@@ -115,7 +115,7 @@ def country
    
 	end
     def articleDF
-        Article.destroy_all
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_2"])
 
@@ -152,7 +152,7 @@ def country
     end
 
         def articleGI
-        Article.destroy_all
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_3"])
 
@@ -189,7 +189,7 @@ def country
     end
 
         def articleJL
-        Article.destroy_all
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_4"])
 
@@ -228,7 +228,7 @@ def country
 
 
         def articleMO
-        Article.destroy_all
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_5"])
 
@@ -267,7 +267,7 @@ def country
 
 
         def articlePR
-        Article.destroy_all
+       
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_6"])
 
@@ -306,7 +306,7 @@ def country
 
 
         def articleSU
-        Article.destroy_all
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_7"])
 
@@ -345,7 +345,7 @@ def country
 
 
         def articleVX
-        Article.destroy_all
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_8"])
 
@@ -383,7 +383,7 @@ def country
     end
 
          def articleYZ
-        Article.destroy_all
+      
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_9"])
 
