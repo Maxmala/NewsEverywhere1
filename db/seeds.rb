@@ -7,7 +7,7 @@
     require "open-uri"
       
 def country
-        Country.destroy_all
+        
         Country.create(name: "Argentine", shortcode: "ar", continent: "Amérique")
         Country.create(name: "Australie", shortcode: "au", continent: "Océanie")
         Country.create(name: "Autriche", shortcode: "at", continent: "Europe")
@@ -66,7 +66,7 @@ def country
     end
 
 	def category
-        Category.destroy_all
+        
 		Category.create(name: "Business" , nameFr: "Business")
 		Category.create(name: "Entertainment" , nameFr: "Divertissement")
 		Category.create(name: "Health" , nameFr: "Santé")
