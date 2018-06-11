@@ -15,7 +15,7 @@
 
       
 def country
-        Country.destroy_all
+       
         Country.create(name: "Argentine", shortcode: "ar", continent: "Amérique")
         Country.create(name: "Australie", shortcode: "au", continent: "Océanie")
         Country.create(name: "Autriche", shortcode: "at", continent: "Europe")
@@ -74,7 +74,7 @@ def country
     end
 
 	def category
-        Category.destroy_all
+ 
 		Category.create(name: "Business" , nameFr: "Business")
 		Category.create(name: "Entertainment" , nameFr: "Divertissement")
 		Category.create(name: "Health" , nameFr: "Santé")
@@ -86,7 +86,7 @@ def country
 	end
 
 	def articleAF
-        Article.destroy_all
+ 
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY_1"])
 
@@ -123,7 +123,7 @@ def country
    
 	end
     def articleGM
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_2"])
 
@@ -160,7 +160,7 @@ def country
     end
 
         def articleNR
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_3"])
 
@@ -197,7 +197,7 @@ def country
     end
 
         def articleSZ
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_4"])
 
