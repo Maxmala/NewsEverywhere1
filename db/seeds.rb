@@ -244,7 +244,7 @@ def country
                     link = 'https://newsapi.org/v2/top-headlines?'\
                     'country=' + shortcode + '&'\
                     'category=' + name + '&'\
-                    'apiKey='+ ENV['API_NEWS_KEY_4']
+                    'apiKey='+ ENV['API_NEWS_KEY_5']
                     req = open(link)
                     @response_body = JSON.parse(req.read)
                     @response_body['articles'].each do |article|
@@ -283,7 +283,7 @@ def country
                     link = 'https://newsapi.org/v2/top-headlines?'\
                     'country=' + shortcode + '&'\
                     'category=' + name + '&'\
-                    'apiKey='+ ENV['API_NEWS_KEY_4']
+                    'apiKey='+ ENV['API_NEWS_KEY_6']
                     req = open(link)
                     @response_body = JSON.parse(req.read)
                     @response_body['articles'].each do |article|
@@ -322,7 +322,7 @@ def country
                     link = 'https://newsapi.org/v2/top-headlines?'\
                     'country=' + shortcode + '&'\
                     'category=' + name + '&'\
-                    'apiKey='+ ENV['API_NEWS_KEY_4']
+                    'apiKey='+ ENV['API_NEWS_KEY_7']
                     req = open(link)
                     @response_body = JSON.parse(req.read)
                     @response_body['articles'].each do |article|
@@ -361,7 +361,7 @@ def country
                     link = 'https://newsapi.org/v2/top-headlines?'\
                     'country=' + shortcode + '&'\
                     'category=' + name + '&'\
-                    'apiKey='+ ENV['API_NEWS_KEY_4']
+                    'apiKey='+ ENV['API_NEWS_KEY_8']
                     req = open(link)
                     @response_body = JSON.parse(req.read)
                     @response_body['articles'].each do |article|
