@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  
   root 'home#homepage'
 
   get "/index", to: "home#index" , as: "show"
   get "/countries/:id", to:  "countries#show", as: "country"
+  get "/categories/:id", to:  "categories#show", as: "category"
+  get "/articles/:id", to:  "articles#show", as: "article"
+
+  devise_for :users
 
   mount ForestLiana::Engine => '/forest'
-  resources :home
+  
   
 end
