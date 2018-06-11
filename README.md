@@ -1,6 +1,6 @@
 
 
-# Info Sans Frontieres : Des nouvelles pour de tous pour tous 
+# Infos Sans Frontiere 
 -------------
 
 # Introduction : Présentation de l'équipe

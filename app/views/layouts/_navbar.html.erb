@@ -460,19 +460,37 @@
 
     <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item">
-            <a href="app/documentation/getting-started/introduction.html" class="nav-link">
-               Docs
+
+            <% if user_signed_in? %>
+                
+            <% else %>
+            <a href="<%= new_user_session_path %>" class="nav-link">
+               Se connecter
             </a>
+
+            <% end %>
         </li>
     </ul>
 </div>
 
 
 <div class="pl-4 d-none d-lg-inline-block">
-    <a href="https://goo.gl/9BbH7R" class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" target="_blank">
-        S'inscrire
-            </a>
+
+    <% if user_signed_in? %>
+
+<%= link_to('Se déconnecter', destroy_user_session_path, method: :delete , :class => "btn btn-large btn-danger") %>
+    <% else %>
+    <a href="<%= new_user_registration_path %>" class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" target="_blank">  S'inscrire</a>
+       
+
+        <% end %>
+
+
+
+           
 </div>
         </div>
     </nav>
 </div>
+
+
