@@ -1,0 +1,108 @@
+<!-- Slider -->
+<section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset=".navbar">
+    <div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="fade" data-swiper-items="1" data-swiper-space-between="0" data-swiper-sm-items="1" data-swiper-sm-space-between="0" data-swiper-xs-items="1" data-swiper-xs-space-between="0">
+        <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="5000">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path(@image) %>)"; background-position: bottom bottom;">
+                    <div class="container d-flex align-items-center no-padding">
+                        <div class="col">
+                            <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="heading heading-xl-x2 strong-700 c-white text-uppercase animated" data-animation-in="zoomIn" data-animation-onetime="false" data-animation-delay="200">
+                                        <span style="opacity: 0.4;"><%= @name %></span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="5000">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path(@image) %>)"; background-position: bottom bottom;">
+                    <div class="container d-flex align-items-center no-padding">
+                        <div class="col">
+                            <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="heading heading-xl-x2 strong-700 c-white text-uppercase animated" data-animation-in="zoomIn" data-animation-onetime="false" data-animation-delay="200">
+                                        <span style="opacity: 0.4;"><%= @name %></span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="5000">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path(@image) %>)"; background-position: bottom bottom;">
+                    <div class="container d-flex align-items-center no-padding">
+                        <div class="col">
+                            <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="heading heading-xl-x2 strong-700 c-white text-uppercase animated" data-animation-in="zoomIn" data-animation-onetime="false" data-animation-delay="200">
+                                        <span style="opacity: 0.4;"><%= @name %></span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
+    </div>
+</section>
+
+<% @articles.each do |article| %>
+<section class="slice sct-color-1">
+                        <div class="container">
+                            <div class="section-title section-title--style-1 text-center">
+                                <h4 class="heading heading-xs text-uppercase c-base-1 strong-600"><%= article[:source] %></h4>
+                                </h3>
+                                <span class="section-title-delimiter clearfix d-none"></span>
+                            </div>
+
+                            <span class="clearfix"></span>
+                            <span class="space-xs-md"></span>
+
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-sm-12 col-12">
+                                    <div class="py-4">
+                                        <ul class="inline-links">
+                                        </ul>
+
+                                                                                 
+
+                                        <p class="mt-4">
+                                            <%= EasyTranslate.translate(article[:description], :to => :french) %>
+                                        </p>
+
+                                        <a href="article_path" class="btn btn-styled btn-base-1 btn-circle mt-4">Lire</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12 col-12"><a href="article_path" >
+                                    <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <% end %>
+
+
+
+
+
+
+
+
