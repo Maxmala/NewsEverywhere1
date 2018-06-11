@@ -135,14 +135,13 @@
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Royaume Uni</a>
                                                     <span class="clearfix"></span>
 
-                                                    <small class="text-uppercase c-white"> articles</small>
 
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Royaume Uni").id).length %> articles </a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Royaume Uni").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
