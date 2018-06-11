@@ -19,7 +19,7 @@ def country
         Country.create(name: "Chine", shortcode: "cn", continent: "Asie")
         Country.create(name: "Colombie", shortcode: "co", continent: "Amérique")
         Country.create(name: "Cuba", shortcode: "cu", continent: "Amérique")
-        Country.create(name: "Republique Tchèque ", shortcode: "cz", continent: "Afrique")
+        Country.create(name: "Republique Tchèque", shortcode: "cz", continent: "Afrique")
         Country.create(name: "Egypte", shortcode: "eg", continent: "Afrique")
         Country.create(name: "France", shortcode: "fr", continent: "Europe")
         Country.create(name: "Allemagne", shortcode: "de", continent: "Europe")
@@ -27,23 +27,23 @@ def country
         Country.create(name: "Hong Kong", shortcode: "hk", continent: "Asie")
         Country.create(name: "Hongrie", shortcode: "hu", continent: "Europe")
         Country.create(name: "Inde", shortcode: "in", continent: "Asie")
-        Country.create(name: "Indonesie", shortcode: "id", continent: "Asie")
-        Country.create(name: "Irelande", shortcode: "ie", continent: "Europe")
-        Country.create(name: "Israël", shortcode: "il", continent: "Asie")
+        Country.create(name: "Indonésie", shortcode: "id", continent: "Asie")
+        Country.create(name: "Irlande", shortcode: "ie", continent: "Europe")
+        Country.create(name: "Israel", shortcode: "il", continent: "Asie")
         Country.create(name: "Italie", shortcode: "it", continent: "Europe")
         Country.create(name: "Japon", shortcode: "jp", continent: "Asie")
-        Country.create(name: "Letonie", shortcode: "lv", continent: "Europe")
+        Country.create(name: "Lettonie", shortcode: "lv", continent: "Europe")
         Country.create(name: "Lituanie", shortcode: "lt", continent: "Europe")
         Country.create(name: "Malaisie", shortcode: "my", continent: "Asie")
         Country.create(name: "Mexique", shortcode: "mx", continent: "Amérique")
-        Country.create(name: "Maroc ", shortcode: "ma", continent: "Afrique")
+        Country.create(name: "Maroc", shortcode: "ma", continent: "Afrique")
         Country.create(name: "Pays-Bas", shortcode: "nl", continent: "Europe")
-        Country.create(name: "Nouvelles Zélande", shortcode: "nz", continent: "Océanie")
+        Country.create(name: "Nouvelle Zélande", shortcode: "nz", continent: "Océanie")
         Country.create(name: "Nigeria", shortcode: "nq", continent: "Afrique")
         Country.create(name: "Norvège", shortcode: "no", continent: "Europe")
         Country.create(name: "Philippines", shortcode: "ph", continent: "Asie")
-        Country.create(name: "Pologne ", shortcode: "pl", continent: "Europe")
-        Country.create(name: "Portugal ", shortcode: "pt", continent: "Europe")
+        Country.create(name: "Pologne", shortcode: "pl", continent: "Europe")
+        Country.create(name: "Portugal", shortcode: "pt", continent: "Europe")
         Country.create(name: "Roumanie", shortcode: "ro", continent: "Europe")
         Country.create(name: "Russie", shortcode: "ru", continent: "Asie")
         Country.create(name: "Arabie Saoudite", shortcode: "sa", continent: "Asie")
@@ -58,9 +58,9 @@ def country
         Country.create(name: "Taïwan", shortcode: "tw", continent: "Asie")
         Country.create(name: "Thaïlande", shortcode: "th", continent: "Asie")
         Country.create(name: "Turquie", shortcode: "tr", continent: "Asie")
-        Country.create(name: "Emirats Arabes Unis ", shortcode: "ae", continent: "Asie")
+        Country.create(name: "Emirats Arabes Unis", shortcode: "ae", continent: "Asie")
         Country.create(name: "Ukraine", shortcode: "ua", continent: "Europe")
-        Country.create(name: "Royaume Uni", shortcode: "gb", continent: "Europe")
+        Country.create(name: "Royaume-Uni", shortcode: "gb", continent: "Europe")
         Country.create(name: "Etats-Unis", shortcode: "us", continent: "Amérique")
         Country.create(name: "Vénézuela", shortcode: "ve", continent: "Amérique")
 
@@ -387,7 +387,7 @@ def country
     end
 
          def articleYZ
-<
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_9"])
 
