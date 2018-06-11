@@ -5,9 +5,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
     require "open-uri"
-      
+
+
 def country
-        
+
         Country.create(name: "Argentine", shortcode: "ar", continent: "Amérique")
         Country.create(name: "Australie", shortcode: "au", continent: "Océanie")
         Country.create(name: "Autriche", shortcode: "at", continent: "Europe")
@@ -59,7 +60,7 @@ def country
         Country.create(name: "Turquie", shortcode: "tr", continent: "Asie")
         Country.create(name: "Emirats Arabes Unis ", shortcode: "ae", continent: "Asie")
         Country.create(name: "Ukraine", shortcode: "ua", continent: "Europe")
-        Country.create(name: "Royaume unis", shortcode: "gb", continent: "Europe")
+        Country.create(name: "Royaume Uni", shortcode: "gb", continent: "Europe")
         Country.create(name: "Etats-Unis", shortcode: "us", continent: "Amérique")
         Country.create(name: "Vénézuela", shortcode: "ve", continent: "Amérique")
 
@@ -73,12 +74,11 @@ def country
 		Category.create(name:"Science", nameFr:"Science")
         Category.create(name:"Sports", nameFr:"Sport")
         Category.create(name:"Technology", nameFr:"Technologie")
-
-
 	end
 
+
 	def articleAC
-        Article.destroy_all
+        
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY_1"])
 
@@ -114,8 +114,10 @@ def country
         end
    
 	end
+
+
     def articleDF
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_2"])
 
@@ -151,8 +153,9 @@ def country
         end
     end
 
+
         def articleGI
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_3"])
 
@@ -188,8 +191,9 @@ def country
         end
     end
 
+
         def articleJL
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_4"])
 
@@ -228,7 +232,7 @@ def country
 
 
         def articleMO
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_5"])
 
@@ -267,7 +271,7 @@ def country
 
 
         def articlePR
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_6"])
 
@@ -306,7 +310,7 @@ def country
 
 
         def articleSU
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_7"])
 
@@ -345,7 +349,7 @@ def country
 
 
         def articleVX
-        Article.destroy_all
+
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_8"])
 
@@ -383,7 +387,7 @@ def country
     end
 
          def articleYZ
-        Article.destroy_all
+<
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_9"])
 

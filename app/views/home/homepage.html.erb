@@ -99,6 +99,7 @@
                             <div class="masonry row row-sm-padding">
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
+
                                         <div class="block-image">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Germany.jpg") %>">
@@ -685,16 +686,16 @@
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
+
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Ukraine</a>
                                                     <span class="clearfix"></span>
-
                                                     <small class="text-uppercase c-white">Articles</small>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Grèce").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -765,13 +766,12 @@
 
 
                                                     <small class="text-uppercase c-white">Articles</small>
-
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les offres</a>
                                         </div>
                                     </div>
                                 </div>
@@ -820,7 +820,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Italie").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -869,7 +869,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "France").id).length %> Articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -918,7 +918,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Indonesie").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -941,7 +941,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les offres</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Thaïlande").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -957,6 +957,7 @@
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Philippines</a>
+
                                                     <span class="clearfix"></span>
 
 
@@ -967,7 +968,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Japon").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -985,13 +986,13 @@
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Russie</a>
                                                     <span class="clearfix"></span>
 
-                                                    <small class="text-uppercase c-white">Articles</small>
+                                                    <small class="text-uppercase c-white">articles</small>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Chine").id).length %> Articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1160,7 +1161,11 @@
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
+<<<<<<< HEAD
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Argentine</a>
+=======
+                                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Brésil</a>
+>>>>>>> eace2dbb1e2a2c3db1e52e6e09517d1cbd11d78f
                                                     <span class="clearfix"></span>
 
                                                     <small class="text-uppercase c-white">Articles</small>
@@ -1169,7 +1174,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Brésil").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1184,16 +1189,20 @@
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
+<<<<<<< HEAD
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Brésil</a>
+=======
+                                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Argentine</a>
+>>>>>>> eace2dbb1e2a2c3db1e52e6e09517d1cbd11d78f
                                                     <span class="clearfix"></span>
 
-                                                    <small class="text-uppercase c-white">Articles</small>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle">Voir les infos</a>
+                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Argentine").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
