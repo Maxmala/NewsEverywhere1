@@ -4,7 +4,7 @@
         <div class="swiper-wrapper">
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path('img-29.jpg') %>)"; background-position: bottom bottom;">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path(@image) %>)"; background-position: bottom bottom;">
                     <div class="container d-flex align-items-center no-padding">
                         <div class="col">
                             <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
@@ -21,7 +21,7 @@
 
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path('img-29.jpg') %>)"; background-position: bottom bottom;">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path(@image) %>)"; background-position: bottom bottom;">
                     <div class="container d-flex align-items-center no-padding">
                         <div class="col">
                             <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
@@ -38,7 +38,7 @@
 
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path('img-29.jpg') %>)"; background-position: bottom bottom;">
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path(@image) %>)"; background-position: bottom bottom;">
                     <div class="container d-flex align-items-center no-padding">
                         <div class="col">
                             <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
@@ -63,13 +63,11 @@
     </div>
 </section>
 
-<% Article.where(country_id: params[:id]).each do |article| %>
+<% @articles.each do |article| %>
 <section class="slice sct-color-1">
                         <div class="container">
                             <div class="section-title section-title--style-1 text-center">
                                 <h4 class="heading heading-xs text-uppercase c-base-1 strong-600"><%= article[:source] %></h4>
-                                <h3 class="section-title-inner heading-2 strong-500">
-                                    <span><%= article[:source] %></span>
                                 </h3>
                                 <span class="section-title-delimiter clearfix d-none"></span>
                             </div>
@@ -80,18 +78,21 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 col-sm-12 col-12">
                                     <div class="py-4">
-                                        
+                                        <ul class="inline-links">
+                                        </ul>
+
+                                                                                 
 
                                         <p class="mt-4">
-                                            <%= EasyTranslate.translate(article['descritpion'], :to => :french)  %>
+                                            <%= EasyTranslate.translate(article[:description], :to => :french) %>
                                         </p>
 
-                                        <a href="https://translate.google.fr/translate?sl=en&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u=<%= article['url'] %>&edit-text=&act=url" class="btn btn-styled btn-base-1 btn-circle mt-4"><%= article['urlToImage'] %></a>
+                                        <a href="article_path" class="btn btn-styled btn-base-1 btn-circle mt-4">Lire</a>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-sm-12 col-12">
-                                    <img src="<%= article["urlToImage"] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3">
+                                <div class="col-lg-6 col-sm-12 col-12"><a href="article_path" >
+                                    <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
                                 </div>
                             </div>
                         </div>
