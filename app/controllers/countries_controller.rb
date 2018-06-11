@@ -5,7 +5,7 @@ class CountriesController < ApplicationController
 
     @country = Country.find_by(id: params[:id])
   	@name = @country.name
-  	@articles = @country.articles
+    @articles = @country.articles.limit(10)
   	image
   	translate
  
