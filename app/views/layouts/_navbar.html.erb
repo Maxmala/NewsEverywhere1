@@ -478,9 +478,9 @@
 
     <% if user_signed_in? %>
 
-<%= link_to('Se déconnecter', destroy_user_session_path, method: :delete , :class => "btn btn-large btn-danger") %>
+<%= link_to('Se déconnecter', destroy_user_session_path, method: :delete , :class => "btn btn-large btn-danger" , :data => {:confirm => 'Etes vous sur de vouloir vous déconnecter ?'}) %>
     <% else %>
-    <a href="<%= new_user_registration_path %>" class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" target="_blank">  S'inscrire</a>
+    <a href="<%= new_user_registration_path  %>"  class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" target="_blank">  S'inscrire</a>
        
 
         <% end %>
