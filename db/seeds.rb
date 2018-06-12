@@ -7,6 +7,7 @@
     require "open-uri"
 
 
+
 def country
 
         Country.create(name: "Argentine", shortcode: "ar", continent: "Amérique")
@@ -77,7 +78,10 @@ def country
 	end
 
 
-	def articleAC
+
+
+	def articleA
+
         Article.destroy_all
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY_1"])
@@ -86,7 +90,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[a-c]/)
+            if shortcode.match?(/^[a]/)
  
                 @categories.each do |name|
 
@@ -115,9 +119,8 @@ def country
    
 	end
 
-
-    def articleDF
-
+    def articleB
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_2"])
 
@@ -125,7 +128,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[d-f]/)
+            if shortcode.match?(/^[b]/)
  
                 @categories.each do |name|
 
@@ -151,11 +154,12 @@ def country
             end
 
         end
+   
     end
 
 
-        def articleGI
-
+def articleC
+        
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_3"])
 
@@ -163,7 +167,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[g-i]/)
+            if shortcode.match?(/^[c]/)
  
                 @categories.each do |name|
 
@@ -189,10 +193,11 @@ def country
             end
 
         end
+   
     end
 
 
-        def articleJL
+    def articleDF
 
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_4"])
@@ -201,7 +206,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[j-l]/)
+            if shortcode.match?(/^[d-f]/)
  
                 @categories.each do |name|
 
@@ -227,11 +232,11 @@ def country
             end
 
         end
-   
     end
 
 
-        def articleMO
+
+        def articleGH
 
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_5"])
@@ -240,7 +245,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[m-o]/)
+            if shortcode.match?(/^[g-h]/)
  
                 @categories.each do |name|
 
@@ -266,11 +271,10 @@ def country
             end
 
         end
-   
     end
 
 
-        def articlePR
+ def articleI
 
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_6"])
@@ -279,7 +283,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[p-r]/)
+            if shortcode.match?(/^[i]/)
  
                 @categories.each do |name|
 
@@ -305,11 +309,12 @@ def country
             end
 
         end
-   
     end
 
 
-        def articleSU
+
+
+        def articleJL
 
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_7"])
@@ -318,7 +323,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[s-u]/)
+            if shortcode.match?(/^[j-l]/)
  
                 @categories.each do |name|
 
@@ -348,7 +353,8 @@ def country
     end
 
 
-        def articleVX
+
+        def articleM
 
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_8"])
@@ -357,7 +363,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[v-x]/)
+            if shortcode.match?(/^[m]/)
  
                 @categories.each do |name|
 
@@ -386,7 +392,8 @@ def country
    
     end
 
-         def articleYZ
+
+    def articleNO
 
         #initialisation des api
         newsapi = News.new(ENV["API_NEWS_KEY_9"])
@@ -395,7 +402,7 @@ def country
         @countries = Country.all.pluck(:shortcode)
         @categories = Category.all.pluck(:name)
         @countries.each do |shortcode|
-            if shortcode.match?(/^[y-z]/)
+            if shortcode.match?(/^[n-o]/)
  
                 @categories.each do |name|
 
@@ -425,6 +432,203 @@ def country
     end
 
 
+        def articlePR
+
+        #initialisation des api
+        newsapi = News.new(ENV["API_NEWS_KEY_10"])
+
+        #
+        @countries = Country.all.pluck(:shortcode)
+        @categories = Category.all.pluck(:name)
+        @countries.each do |shortcode|
+            if shortcode.match?(/^[p-r]/)
+ 
+                @categories.each do |name|
+
+
+                    link = 'https://newsapi.org/v2/top-headlines?'\
+                    'country=' + shortcode + '&'\
+                    'category=' + name + '&'\
+                    'apiKey='+ ENV['API_NEWS_KEY_10']
+                    req = open(link)
+                    @response_body = JSON.parse(req.read)
+                    @response_body['articles'].each do |article|
+                        @source = article["source"]['name']
+                        @author = article["author"]
+                        @description = article["description"] 
+                        @url = article["url"]
+                        @urlToImage = article["urlToImage"]
+                        @category_id = Category.find_by(name: name).id
+                        @country_id = Country.find_by(shortcode: shortcode).id
+                        Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
+                    end
+
+                end
+            end
+
+        end
+   
+    end
+
+
+
+        def articleS
+
+        #initialisation des api
+        newsapi = News.new(ENV["API_NEWS_KEY_11"])
+
+        #
+        @countries = Country.all.pluck(:shortcode)
+        @categories = Category.all.pluck(:name)
+        @countries.each do |shortcode|
+            if shortcode.match?(/^[s]/)
+ 
+                @categories.each do |name|
+
+
+                    link = 'https://newsapi.org/v2/top-headlines?'\
+                    'country=' + shortcode + '&'\
+                    'category=' + name + '&'\
+                    'apiKey='+ ENV['API_NEWS_KEY_11']
+                    req = open(link)
+                    @response_body = JSON.parse(req.read)
+                    @response_body['articles'].each do |article|
+                        @source = article["source"]['name']
+                        @author = article["author"]
+                        @description = article["description"] 
+                        @url = article["url"]
+                        @urlToImage = article["urlToImage"]
+                        @category_id = Category.find_by(name: name).id
+                        @country_id = Country.find_by(shortcode: shortcode).id
+                        Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
+                    end
+
+                end
+            end
+
+        end
+   
+    end
+
+
+
+
+        def articleTU
+
+        #initialisation des api
+        newsapi = News.new(ENV["API_NEWS_KEY_12"])
+
+        #
+        @countries = Country.all.pluck(:shortcode)
+        @categories = Category.all.pluck(:name)
+        @countries.each do |shortcode|
+            if shortcode.match?(/^[t-u]/)
+ 
+                @categories.each do |name|
+
+
+                    link = 'https://newsapi.org/v2/top-headlines?'\
+                    'country=' + shortcode + '&'\
+                    'category=' + name + '&'\
+                    'apiKey='+ ENV['API_NEWS_KEY_12']
+                    req = open(link)
+                    @response_body = JSON.parse(req.read)
+                    @response_body['articles'].each do |article|
+                        @source = article["source"]['name']
+                        @author = article["author"]
+                        @description = article["description"] 
+                        @url = article["url"]
+                        @urlToImage = article["urlToImage"]
+                        @category_id = Category.find_by(name: name).id
+                        @country_id = Country.find_by(shortcode: shortcode).id
+                        Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
+                    end
+
+                end
+            end
+
+        end
+   
+    end
+
+
+        def articleVX
+
+        #initialisation des api
+        newsapi = News.new(ENV["API_NEWS_KEY_13"])
+
+        #
+        @countries = Country.all.pluck(:shortcode)
+        @categories = Category.all.pluck(:name)
+        @countries.each do |shortcode|
+            if shortcode.match?(/^[v-x]/)
+ 
+                @categories.each do |name|
+
+
+                    link = 'https://newsapi.org/v2/top-headlines?'\
+                    'country=' + shortcode + '&'\
+                    'category=' + name + '&'\
+                    'apiKey='+ ENV['API_NEWS_KEY_13']
+                    req = open(link)
+                    @response_body = JSON.parse(req.read)
+                    @response_body['articles'].each do |article|
+                        @source = article["source"]['name']
+                        @author = article["author"]
+                        @description = article["description"] 
+                        @url = article["url"]
+                        @urlToImage = article["urlToImage"]
+                        @category_id = Category.find_by(name: name).id
+                        @country_id = Country.find_by(shortcode: shortcode).id
+                        Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
+                    end
+
+                end
+            end
+
+        end
+   
+    end
+
+         def articleYZ
+
+        #initialisation des api
+        newsapi = News.new(ENV["API_NEWS_KEY_14"])
+
+        #
+        @countries = Country.all.pluck(:shortcode)
+        @categories = Category.all.pluck(:name)
+        @countries.each do |shortcode|
+            if shortcode.match?(/^[y-z]/)
+ 
+                @categories.each do |name|
+
+
+                    link = 'https://newsapi.org/v2/top-headlines?'\
+                    'country=' + shortcode + '&'\
+                    'category=' + name + '&'\
+                    'apiKey='+ ENV['API_NEWS_KEY_14']
+                    req = open(link)
+                    @response_body = JSON.parse(req.read)
+                    @response_body['articles'].each do |article|
+                        @source = article["source"]['name']
+                        @author = article["author"]
+                        @description = article["description"] 
+                        @url = article["url"]
+                        @urlToImage = article["urlToImage"]
+                        @category_id = Category.find_by(name: name).id
+                        @country_id = Country.find_by(shortcode: shortcode).id
+                        Article.create(source: @source, author: @author, description: @description, url: @url, urlToImage: @urlToImage, category_id: @category_id, country_id: @country_id)
+                    end
+
+                end
+            end
+
+        end
+   
+    end
+
+
 
      
 
@@ -433,12 +637,17 @@ def country
 
 country
 category
-articleAC
+articleA
+articleB
+articleC
 articleDF
-articleGI
+articleGH
+articleI
 articleJL
-articleMO
+articleM
+articleNO
 articlePR
-articleSU
+articleS
+articleTU
 articleVX
 articleYZ

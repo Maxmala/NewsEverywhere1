@@ -18,6 +18,9 @@ class Country < ApplicationRecord
   	else
   		@image = "Europe.jpg"
   	end
-  	
+
+      	
   end
+
 end
+
