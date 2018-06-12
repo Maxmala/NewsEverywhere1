@@ -24,7 +24,7 @@ def country
         Country.create(name: "France", shortcode: "fr", continent: "Europe")
         Country.create(name: "Allemagne", shortcode: "de", continent: "Europe")
         Country.create(name: "Grèce", shortcode: "gr", continent: "Europe")
-        Country.create(name: "Honk Kong", shortcode: "hk", continent: "Asie")
+        Country.create(name: "Hong Kong", shortcode: "hk", continent: "Asie")
         Country.create(name: "Hongrie", shortcode: "hu", continent: "Europe")
         Country.create(name: "Inde", shortcode: "in", continent: "Asie")
         Country.create(name: "Indonésie", shortcode: "id", continent: "Asie")
@@ -78,7 +78,7 @@ def country
 
 
 	def articleAC
-        
+        Article.destroy_all
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY_1"])
 

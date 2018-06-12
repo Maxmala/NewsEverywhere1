@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  get 'profile_pages/index'
   root 'home#homepage'
 
   get "/index", to: "home#index" , as: "show"
