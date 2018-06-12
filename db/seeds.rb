@@ -82,7 +82,7 @@ def country
 
 
 	def articleA
-        
+        Article.destroy_all
         #initialisation des api
 		newsapi = News.new(ENV["API_NEWS_KEY_1"])
 
