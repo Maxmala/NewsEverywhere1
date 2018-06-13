@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :image
+  
 
   def show
   	#afficher params id

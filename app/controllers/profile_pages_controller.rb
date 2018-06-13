@@ -14,10 +14,17 @@ class ProfilePagesController < ApplicationController
 
   def settings
     @user = current_user
+    end
 
+  def set_settings
+    @user = current_user
+    @user.categories.destroy_all
     
-  
-  
+    @categories = params[:user][:category_ids]
+    @categories.each do |id|
+
+    @user.categories << Category.where(id: id)
+    end
   end
 end
 
