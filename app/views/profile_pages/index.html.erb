@@ -1,2 +1,19 @@
 <h1>ProfilePages#index</h1>
-<p>Find me in app/views/profile_pages/index.html.erb</p>
+
+
+
+<tbody>
+	<form>
+      <% Category.all.each do |category| %>
+      <tr>
+        <th><%= check_box_tag "interests[]", category.id %> <%= category.nameFr %></th>
+         <% end %>
+      </tr>
+
+      
+	<input type="submit" value="Enregistrer" class="btn btn-warning" name="">
+
+      </form>
+
+    </tbody>
+
