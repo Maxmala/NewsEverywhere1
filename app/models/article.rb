@@ -6,6 +6,11 @@ class Article < ApplicationRecord
   validates :url, presence: true
   after_initialize :default_values
 
+
+  def self.filtered_elements()
+    
+  end
+
   private
 
   def default_values

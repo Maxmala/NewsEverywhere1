@@ -11,5 +11,9 @@ class ProfilePagesController < ApplicationController
 
   	
   end
+
+  def settings
+  
+  end
 end
 
