@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   
  
+  get 'articles/show'
   root 'home#homepage'
 
   get "/index", to: "home#index" , as: "show"

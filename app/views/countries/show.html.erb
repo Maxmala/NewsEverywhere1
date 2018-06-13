@@ -1,3 +1,4 @@
+
 <!-- Slider -->
 <section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset=".navbar">
     <div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="fade" data-swiper-items="1" data-swiper-space-between="0" data-swiper-sm-items="1" data-swiper-sm-space-between="0" data-swiper-xs-items="1" data-swiper-xs-space-between="0">
@@ -70,6 +71,7 @@
                                 <h4 class="heading heading-xs text-uppercase c-base-1 strong-600"><%= article.category[:name] %></h4>
                                 <h3 class="section-title-inner heading-2 strong-500">
                                     <span><%= article[:source] %></span>
+
                                 </h3>
                                 <span class="section-title-delimiter clearfix d-none"></span>
                             </div>
@@ -88,8 +90,8 @@
                                         <p class="mt-4">
                                             <%= EasyTranslate.translate(article[:description], :to => :french) %>
                                         </p>
-
-                                        <a href="article_path" class="btn btn-styled btn-base-1 btn-circle mt-4">Lire</a>
+                                       <a type="button"> <%= link_to "Lire", article_path(article[:id]) %>
+                                         </a>
                                     </div>
                                 </div>
 
