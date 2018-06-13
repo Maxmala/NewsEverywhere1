@@ -75,7 +75,7 @@
                 <img src="<%= asset_path("person-1.jpg") %>" class="img-circle" />
             </div>
             <div class="profile-user-info">
-                <span class="profile-user-name">Bertram Ozzie</span>
+                <span class="profile-user-name">DELAVEGA</span>
                 <span class="profile-user-email">username@example.com</span>
             </div>
         </div>
@@ -174,7 +174,7 @@
     <nav class="navbar navbar-expand-lg navbar--bold navbar-light bg-default ">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="app/index.html">
+                        <a class="navbar-brand" href="<% root_path %>">
                 <img src="<%= asset_path("infos-sans-frontiere-logo.png") %>" class="" alt="infos-sans-frontiere" style="width: 35%;">
                             </a>
             
@@ -463,7 +463,8 @@
         <li class="nav-item">
 
             <% if user_signed_in? %>
-                
+                <%= link_to('Se déconnecter', destroy_user_session_path, method: :delete , :class => "btn btn-large btn-danger" , :data => {:confirm => 'Etes vous sur de vouloir vous déconnecter ?'}) %>
+
             <% else %>
             <a href="<%= new_user_session_path %>" class="nav-link">
                Se connecter
@@ -475,21 +476,6 @@
 </div>
 
 
-<div class="pl-4 d-none d-lg-inline-block">
-
-    <% if user_signed_in? %>
-
-<%= link_to('Se déconnecter', destroy_user_session_path, method: :delete , :class => "btn btn-large btn-danger" , :data => {:confirm => 'Etes vous sur de vouloir vous déconnecter ?'}) %>
-    <% else %>
-    <a href="<%= new_user_registration_path  %>"  class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" target="_blank">  S'inscrire</a>
-       
-
-        <% end %>
-
-
-
-           
-</div>
         </div>
     </nav>
 </div>
