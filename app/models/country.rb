@@ -2,25 +2,30 @@ class Country < ApplicationRecord
 	has_many :articles
 	validates :name, uniqueness: true
 
+def method_name
+
 	def image
 
-  	case 
-  	when @country.continent == "Afrique"
-  		then @image = "Afrique.jpg"
-  	when @country.continent == "Amérique"
-  		then @image = "Amérique.jpg"
-  	when @country.continent == "Asie"
-  		then @image = "Asie.jpg"
-  	when @country.continent == "Europe"
-  		then @image = "Europe.jpg"
-  	when @country.continent == "Océanie"
-  		then @image = "Océanie.jpg"
+  	case continent
+  	when @category == "Business"
+  		then @image = "Business.jpg"
+  	when @country == "Entertainment"
+  		then @image = "Entertainment.jpg"
+  	when @country == "Health"
+  		then @image = "Health.jpg"
+  	when @country == "Science"
+  		then @image = "Science.jpg"
+  	when @country == "Sports"
+  		then @image = "Sports.jpg"
   	else
-  		@image = "Europe.jpg"
+  		@image = "Technology.jpg"
   	end
-
-      	
+  	
   end
+	
+end
+	
+
 
 end
 

@@ -1,3 +1,11 @@
-<% form_for @user
-	<%= f.label :category_id, "Catégories" %><br />
-<%= f.collection_select :category_id, Category.order(:name), :id, :name, {}, {multiple: true} %>
+
+<%= form_for(@user) do |f| %>
+
+
+<%= f.collection_check_boxes(:category_ids, Category.all, :id, :nameFr) %>
+
+<%= f.button :submit %>
+
+<% end %>
+
+

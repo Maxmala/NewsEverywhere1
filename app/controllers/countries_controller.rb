@@ -1,5 +1,5 @@
 class CountriesController < ApplicationController
-  before_action :image
+  
   
   def show
   	#afficher params id
@@ -7,8 +7,8 @@ class CountriesController < ApplicationController
     @country = Country.find_by(id: params[:id])
   	@name = @country.name
     @articles = @country.articles.limit(10)
-  
-  	EasyTranslate.api_key = ENV['EASY_TRANSLATE']
+
+   	EasyTranslate.api_key = ENV['EASY_TRANSLATE']
  
 
   end
