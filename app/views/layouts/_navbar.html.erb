@@ -459,6 +459,17 @@
         </li>
     </ul>
 
+    <div>
+        <% if user_signed_in? %>
+        <%else%>
+            <a class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href="<%= new_user_registration_path %>">
+              S'inscrire
+           </a>
+        <% end %>
+    </div>
+    <div>
+
+
     <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item">
 
@@ -479,5 +490,3 @@
         </div>
     </nav>
 </div>
-
-
