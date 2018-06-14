@@ -19,7 +19,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Arabie Saoudite").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Arabie Saoudite").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Arabie Saoudite").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -44,7 +44,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Chine").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Chine").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Chine").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Corée du sud").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Corée du sud").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Corée du sud").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
                                             <div style="max-height: 340px; width: 100%">
-                                            <a href="Emirats Arabes Unis">
+                                            <a href="/countries/<%= Country.find_by(name: "Emirats Arabes Unis").id %>">
                                                 <img src="<%= asset_path("country/Emirats-Arabes-Unis.jpg") %>">
                                             </a>
                                         </div>
@@ -98,7 +98,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Emirats Arabes Unis").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Emirats Arabes Unis").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Emirats Arabes Unis").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Hong Kong").id).length %> articles</a>
+                                            <a href="/countries/<%= Country.find_by(name: "Hong Kong").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Hong Kong").id).length %> articles</a>
 
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Inde").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Inde").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Inde").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -178,14 +178,12 @@
                                                     <span class="clearfix"></span>
 
                                                   
-
-
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Indonésie").id).length %> Articles</a>
+                                            <a href="/countries/<%= Country.find_by(name: "Indonésie").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Indonésie").id).length %> Articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +211,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Israël").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Israël").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Israël").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +240,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Japon").id).length %> articles</a>
+                                            <a href="/countries/<%= Country.find_by(name: "Japon").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Japon").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +267,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Malaisie").id).length %> articles</a>
+                                            <a href="/countries/<%= Country.find_by(name: "Malaisie").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Malaisie").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +295,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Philippines").id).length %> articles</a>
+                                            <a href="/countries/<%= Country.find_by(name: "Philippines").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Philippines").id).length %> articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -324,7 +322,7 @@
                                         </div>
 
                                         <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Russie").id).length %> Articles</a>
+                                            <a href="/countries/<%= Country.find_by(name: "Russie").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Russie").id).length %> Articles</a>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +351,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Singapour").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Singapour").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Singapour").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -380,7 +378,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Taïwan").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Taïwan").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Taïwan").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -407,7 +405,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Thaïlande").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Thaïlande").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Thaïlande").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -434,7 +432,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Turquie").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Turquie").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"> <%=Article.where(country_id: Country.find_by(name: "Turquie").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
