@@ -21,7 +21,7 @@
                                         </div>
 
                                           <div class="animate--hover-button">
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Australie").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Australie").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Australie").id).length %> articles </a>
                                         </div>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@
 
                                           <div class="animate--hover-button">
 
-                                            <a href="#" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Nouvelle-Zélande").id).length %> articles </a>
+                                            <a href="/countries/<%= Country.find_by(name: "Nouvelle-Zélande").id %>" class="btn btn-styled btn-sm btn-base-2 btn-circle"><%=Article.where(country_id: Country.find_by(name: "Nouvelle-Zélande").id).length %> articles </a>
 
                                         </div>
                                     </div>
