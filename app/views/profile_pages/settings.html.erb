@@ -1,0 +1,113 @@
+
+<section class="slice sct-color-1" >
+	<div class="container">
+	<div class="section-title section-title--style-1 text-center">
+		<h3 class="section-title-inner heading-2 strong-400">Personalisez votre sélection d'articles</h3>
+	</div>
+	</div>
+<div class="container">
+
+
+<%= form_for(@user) do |f| %>
+
+<div class="section-title section-title--style-1 text-center ">
+		<h5 class="heading heading-3 strong-400">Selectionez vos catégories</h5>
+	</div>
+
+<div class="container">
+
+<div class="card z-depth-2-top">
+	
+
+<%= f.collection_check_boxes(:category_ids, Category.all, :id, :nameFr, item_wrapper_class: "block")%>
+</div>
+
+
+
+<div class="section-title section-title--style-1 text-center">
+		<h5 class="heading heading-3 strong-500 mt-0">Selectionez les pays sur lesquels vous préférez être informé</h5>
+	</div>
+
+<div class="container">
+
+<div class="card z-depth-2-top">
+	<div class="section-title section-title--style-1 text-center">
+	<h3 class="section-title-inner heading-3 strong-400"> Afrique</h3>
+</div>
+<%= f.collection_check_boxes(:country_ids, Country.where(continent: "Afrique"), :id, :name ) do |b| %>
+
+<%= b.label class:"label-checkbox" do %>
+<%= b.check_box + b.text %>
+<% end %>
+<% end %>
+ </div>
+</div>
+
+
+<div class="container">
+ <div class="card z-depth-2-top">
+	<div class="section-title section-title--style-1 text-center">
+	<h3 class="section-title-inner heading-3 strong-400"> Amérique</h3>
+</div>
+<%= f.collection_check_boxes(:country_ids, Country.where(continent: "Amérique"), :id, :name) do |b| %>
+
+<%= b.label class:"label-checkbox" do %>
+<%= b.check_box + b.text %>
+<% end %>
+<% end %>
+ </div>
+</div>
+
+
+<div class="container">
+<div class="card z-depth-2-top">
+	<div class="section-title section-title--style-1 text-center">
+	<h3 class="section-title-inner heading-3 strong-400"> Asie</h3>
+</div>
+<%= f.collection_check_boxes(:country_ids, Country.where(continent: "Asie"), :id, :name ) do |b| %>
+
+<%= b.label class:"label-checkbox" do %>
+<%= b.check_box + b.text %>
+<% end %>
+<% end %>
+ </div>
+</div>
+
+
+<div class="container">
+<div class="card z-depth-2-top">
+	<div class="section-title section-title--style-1 text-center">
+	<h3 class="section-title-inner heading-3 strong-400"> Europe</h3>
+</div>
+<%= f.collection_check_boxes(:country_ids, Country.where(continent: "Europe"), :id, :name ) do |b| %>
+
+<%= b.label class:"label-checkbox" do %>
+<%= b.check_box + b.text %>
+<% end %>
+<% end %>
+ </div>
+</div>
+
+
+<div class="container">
+<div class="card z-depth-2-top">
+	<div class="section-title section-title--style-1 text-center">
+	<h3 class="section-title-inner heading-3 strong-400"> Océanie</h3>
+</div>
+<%= f.collection_check_boxes(:country_ids, Country.where(continent: "Océanie"), :id, :name ) do |b| %>
+
+<%= b.label class:"label-checkbox" do %>
+<%= b.check_box + b.text %>
+<% end %>
+<% end %>
+ </div>
+</div>
+
+
+<div class="container">
+<%= f.button :Enregistrer , class: "btn btn-primary"%>
+  </div>
+<% end %>
+</div>
+</section>
+
