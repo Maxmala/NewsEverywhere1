@@ -11,7 +11,7 @@
 <%= form_for(@user) do |f| %>
 
 
-<%= f.collection_check_boxes(:country_ids, Country.all, :id, :nameFr) %>
+<%= f.collection_check_boxes(:country_ids, Country.all, :id, :name) %>
 
 <%= f.button :submit %>
 
