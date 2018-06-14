@@ -107,32 +107,41 @@
     <nav class="navbar navbar-expand-lg navbar--bold navbar-light bg-default ">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="/">
+                        <a class="navbar-brand" href="<%= root_path %>" data-turbolinks="false"> 
                 <img src="<%= asset_path("infos-sans-frontiere-logo.png") %>" class="" alt="infos-sans-frontiere" style="width: 35%;">
                             </a>
             
             
        
         
-
-
-                    
-    <div>
+         
+            <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbar_main">
+   
+    <!-- Navbar links -->
+   <div>
         <% if user_signed_in? %>
         <%else%>
             <a class="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href="<%= new_user_registration_path %>">
               S'inscrire
            </a>
+
         <% end %>
     </div>
-    <div>
+           </div>
+
+                    
+  
 
 
     <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item">
+            
+    <div>
 
             <% if user_signed_in? %>
                 <%= link_to('Se déconnecter', destroy_user_session_path, method: :delete , :class => "btn btn-large btn-danger" , :data => {:confirm => 'Etes vous sur de vouloir vous déconnecter ?'}) %>
+                <%= link_to('Paramètres', settings_path,  :class => "btn btn-large btn-primary" ) %>
+                <%= link_to('Profil', profil_path,  :class => "btn btn-large btn-primary" ) %>
 
             <% else %>
             <a href="<%= new_user_session_path %>" class="nav-link">
