@@ -31,17 +31,15 @@
                                         <ul class="inline-links">
                                         </ul>
 
-                                                                                 
-
                                         <p class="mt-4">
                                             <%= EasyTranslate.translate(@article.description, :to => :french) %>
                                         </p>
-                                       <a type="button"> <%= link_to "Lire", article_path(@article.id) %>
-                                         </a>
+                                        <p> <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @article.url + "&edit-text=&act=url"%>" target="_blank">Article</a>
+                                      </p>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-sm-12 col-12"><a href="article_path(@article.id)" >
+                                <div class="col-lg-6 col-sm-12 col-12"><a href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @article.url + "&edit-text=&act=url"%>" >
                                     <img src="<%= @article.urlToImage %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
                                 </div>
                             </div>
