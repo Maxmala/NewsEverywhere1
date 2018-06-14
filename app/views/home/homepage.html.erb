@@ -1584,7 +1584,8 @@
                                 <div class="col-md-4">
                                     <div class="card z-depth-2-top">
                                         <div class="card-image">
-                                            <img src="<%= asset_path("euronews.jpg") %>" class="img-responsive img-center">
+                                            <img src="<%= asset_path("euronews.jpg") %>"> 
+                                            <div class="img-responsive img-center">
 
                                             <a href="https://www.youtube.com/watch?v=TWt6XkYMD_U" data-fancybox>
                                                 <span class="play-video kd-animate">
@@ -1592,6 +1593,7 @@
                                                 </span>
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="card-body">
                                             <small><em></em></small>
                                             <h3 class="heading heading-5 strong-500">
@@ -1604,7 +1606,8 @@
                                 <div class="col-md-4">
                                     <div class="card z-depth-2-top">
                                         <div class="card-image">
-                                            <img src="<%= asset_path("france24.jpg") %>" class="img-responsive img-center">
+                                            <img src="<%= asset_path("france24.jpg") %>"> 
+                                            <div class="img-responsive img-center">
 
                                             <a href="https://www.youtube.com/watch?v=a-M_5rGhPdg" data-fancybox>
                                                 <span class="play-video kd-animate">
@@ -1612,6 +1615,7 @@
                                                 </span>
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="card-body">
                                             <small><em></em></small>
                                             <h3 class="heading heading-5 strong-500">
@@ -1624,14 +1628,15 @@
                                 <div class="col-md-4">
                                     <div class="card z-depth-2-top">
                                         <div class="card-image">
-                                            <img src="<%= asset_path("franceinfo.png") %>" class="img-responsive img-center">
-
-                                            <a href="https://www.youtube.com/watch?v=wwNZKfBLAsc" data-fancybox>
+                                            <div class="img-responsive img-center">
+                                            <img src="<%= asset_path("franceinfo.png") %>"> 
+                                                <a href="https://www.youtube.com/watch?v=wwNZKfBLAsc" data-fancybox>
                                                 <span class="play-video kd-animate">
                                                     <i class="fa fa-play"></i>
                                                 </span>
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="card-body">
                                             <small><em></em></small>
                                             <h3 class="heading heading-5 strong-500">
@@ -1669,10 +1674,12 @@
                                     <div class="swiper-slide" data-swiper-autoplay="5000">
                                         <div class="block block-image-holder no-radius">
                                             <div class="block-image">
+                                                <div style="max-height: 375px; width: 100%"> 
                                                 <a href="/categories/<%= Category.find_by(name: "Business").id %>">
                                                     <img src="<%= asset_path("img-tall-1.jpg") %>">
                                                 </a>
                                             </div>
+                                        </div>
                                             <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
                                                 <div class="block-info-inner animate-translate--up">
                                                     <div class="text-center">
@@ -1686,10 +1693,12 @@
                                     <div class="swiper-slide" data-swiper-autoplay="5000">
                                         <div class="block block-image-holder no-radius">
                                             <div class="block-image">
+                                                <div style="max-height: 375px; width: 100%"> 
                                                 <a href="/categories/<%= Category.find_by(name: "Entertainment").id %>">
                                                     <img src="<%= asset_path("img-tall-2.jpg") %>">
                                                 </a>
                                             </div>
+                                        </div>
                                             <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
                                                 <div class="block-info-inner animate-translate--up">
                                                     <div class="text-center">
@@ -1703,10 +1712,12 @@
                                     <div class="swiper-slide" data-swiper-autoplay="5000">
                                         <div class="block block-image-holder no-radius">
                                             <div class="block-image">
+                                                <div style="max-height: 375px; width: 100%"> 
                                                 <a href="/categories/<%= Category.find_by(name: "Sports").id %>">
                                                     <img src="<%= asset_path("img-tall-3.jpg") %>">
                                                 </a>
                                             </div>
+                                        </div>
                                             <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
                                                 <div class="block-info-inner animate-translate--up">
                                                     <div class="text-center">
@@ -1720,10 +1731,12 @@
                                     <div class="swiper-slide" data-swiper-autoplay="5000">
                                         <div class="block block-image-holder no-radius">
                                             <div class="block-image">
+                                                <div style="max-height: 375px; width: 100%"> 
                                                 <a href="/categories/<%= Category.find_by(name: "Science").id %>">
                                                     <img src="<%= asset_path("img-tall-4.jpg") %>">
                                                 </a>
                                             </div>
+                                        </div>
                                             <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
                                                 <div class="block-info-inner animate-translate--up">
                                                     <div class="text-center">
@@ -1737,10 +1750,12 @@
                                     <div class="swiper-slide" data-swiper-autoplay="5000">
                                         <div class="block block-image-holder no-radius">
                                             <div class="block-image">
+                                                <div style="max-height: 375px; width: 100%"> 
                                                 <a href="/categories/<%= Category.find_by(name: "Technology").id %>">
                                                     <img src="<%= asset_path("img-tall-5.jpg") %>">
                                                 </a>
                                             </div>
+                                        </div>
                                             <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
                                                 <div class="block-info-inner animate-translate--up">
                                                     <div class="text-center">
@@ -1754,10 +1769,12 @@
                                     <div class="swiper-slide" data-swiper-autoplay="5000">
                                         <div class="block block-image-holder no-radius">
                                             <div class="block-image">
+                                                <div style="max-height: 375px; width: 100%"> 
                                                 <a href="/categories/<%= Category.find_by(name: "Health").id %>">
                                                     <img src="<%= asset_path("img-tall-6.jpg") %>">
                                                 </a>
                                             </div>
+                                        </div>
                                             <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
                                                 <div class="block-info-inner animate-translate--up">
                                                     <div class="text-center">
@@ -1776,89 +1793,7 @@
                     </section>
 
                                         
-                   <section class="slice sct-color-1">
-                        <div class="container">
-                            <div class="row row-sm-padding align-items-center">
-                                <div class="col-12 col-lg-4 push-lg-8">
-                                    <div class="pl-5">
-                                        <h3 class="heading heading-3 strong-400">
-                                            <span>Dernière minute</span>
-                                        </h3>
-                                        <span class="badge bg-pink">Top</span>
-
-                                        <span class="clearfix"></span>
-
-                                        <p class=" mt-4">
-                                            Accédez aux tous derniers articles sortis dans la presse internationale.
-                                        </p>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-lg-8 pull-lg-4">
-                                    <div class="row cols-xs-space cols-sm-space">
-                                        <div class="col-lg-4">
-                                            <div class="block block-image-holder">
-                                                <div class="block-image">
-                                                    <a href="#">
-                                                        <img src="<%= asset_path("img-4.jpg") %>">
-                                                    </a>
-                                                </div>
-                                                <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
-                                                    <div class="block-info-inner">
-                                                        <div class="text-center">
-                                                            <a href="#" class="heading heading-4 strong-500 mb-0 c-white">info de dernière minute</a>
-                                                            <span class="clearfix"></span>
-                                                            <small class="text-uppercase c-white"></small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4">
-                                            <div class="block block-image-holder">
-                                                <div class="block-image">
-                                                    <a href="#">
-                                                        <img src="<%= asset_path("img-5.jpg") %>">
-                                                    </a>
-                                                </div>
-                                                <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
-                                                    <div class="block-info-inner">
-                                                        <div class="text-center">
-                                                            <a href="#" class="heading heading-4 strong-500 mb-0 c-white">info de dernière minute</a>
-                                                            <span class="clearfix"></span>
-                                                            <small class="text-uppercase c-white"></small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4">
-                                            <div class="block block-image-holder">
-                                                <div class="block-image">
-                                                    <a href="#">
-                                                        <img src="<%= asset_path("img-6.jpg") %>">
-                                                    </a>
-                                                </div>
-                                                <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient">
-                                                    <div class="block-info-inner">
-                                                        <div class="text-center">
-                                                            <a href="#" class="heading heading-4 strong-500 mb-0 c-white">info de dernière minute</a>
-                                                            <span class="clearfix"></span>
-                                                            <small class="text-uppercase c-white"></small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
+                   
                     <section class="slice-l bg-base-1">
                         <div class="container sct-inner">
                             <div class="row justify-content-center">
