@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   patch 'profil/settings', to: "profile_pages#set_settings", as: "user"
   get "/profil", to: 'profile_pages#index', as: :user_root
   devise_for :users
+  get '/contact', to: "home#contact", as: "contact"
 
 
   mount ForestLiana::Engine => '/forest'
