@@ -2,6 +2,7 @@ class ProfilePagesController < ApplicationController
 	before_action :authenticate_user!
 
   def index
+    EasyTranslate.api_key = ENV['EASY_TRANSLATE']
     @user = current_user
     @categories = @user.category_ids
     @countries = @user.country_ids
