@@ -6,6 +6,7 @@ class CountriesController < ApplicationController
 
     @country = Country.find_by(id: params[:id])
   	@name = @country.name
+    @name1 = @country.continent
     @articles = @country.articles.limit(10)
     image
    	EasyTranslate.api_key = ENV['EASY_TRANSLATE']
@@ -17,18 +18,27 @@ class CountriesController < ApplicationController
 	def image
 
  	case
-  	when @category == "Business"
-  		then @image = "Business.jpg"
-  	when @country == "Entertainment"
-  		then @image = "Entertainment.jpg"
-  	when @country == "Health"
-  		then @image = "Health.jpg"
-  	when @country == "Science"
-  		then @image = "Science.jpg"
-  	when @country == "Sports"
-  		then @image = "Sports.jpg"
+  	when @country.continent == "Afrique"
+  		then  @image1 = "Afrique.jpg"
+            @image2 = "Afrique2.jpg"
+            @image3 = "Afrique3.jpg"
+
+  	when @country.continent == "Amérique"
+  		then  @image1 = "Amérique.jpg"
+            @image2 = "Amérique2.jpg"
+            @image3 = "Amérique3.jpg"
+  	when @country.continent == "Europe"
+  		then  @image1 = "Europe.jpg"
+            @image2 = "Europe2.jpg"
+            @image3 = "Europe3.jpg"
+  	when @country.continent == "Asie"
+  		then  @image1 = "Asie.jpg"
+            @image2 = "Asie2.jpg"
+            @image3 = "Asie3.jpg"
   	else
-  		@image = "Technology.jpg"
+        		@image1 = "Océanie.jpg"
+            @image2 = "Océanie2.jpg"
+            @image3 = "Océanie3.jpg"
   	end
   	
   end
