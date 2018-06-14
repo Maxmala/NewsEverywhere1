@@ -12,8 +12,7 @@ Rails.application.routes.draw do
   get 'profil', to: "profile_pages#index", as: "profil"
   get 'profil/settings', to: "profile_pages#settings", as: "settings"
   patch 'profil/settings', to: "profile_pages#set_settings", as: "user"
-
-
+  get "/profil", to: 'profile_pages#index', as: :user_root
   devise_for :users
 
 
