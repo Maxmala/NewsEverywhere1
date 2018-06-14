@@ -14,6 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery.min.js
+//= require jquery_ujs
 //= require popper.min.js
 //= require bootstrap.min.js
 //= require slidebar.js

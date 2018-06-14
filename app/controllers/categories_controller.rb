@@ -5,8 +5,9 @@ class CategoriesController < ApplicationController
   	#afficher params id
 
     @category = Category.find_by(id: params[:id])
-  	@name = @category.nameFr
+  	@name = @category.name
   	@articles = @category.articles.limit(10)
+
     EasyTranslate.api_key = ENV['EASY_TRANSLATE']
  	image
 
@@ -15,15 +16,15 @@ class CategoriesController < ApplicationController
 	def image
 
   	case 
-  	when @category == "Business"
+  	when @category.nameFr == "Business"
   		then @image = "Business.jpg"
-  	when @country == "Entertainment"
+  	when @category.nameFr == "Divertissement"
   		then @image = "Entertainment.jpg"
-  	when @country == "Health"
+  	when @category.nameFr == "Santé"
   		then @image = "Health.jpg"
-  	when @country == "Science"
+  	when @category.nameFr == "Science"
   		then @image = "Science.jpg"
-  	when @country == "Sports"
+  	when @category.nameFr == "Sport"
   		then @image = "Sports.jpg"
   	else
   		@image = "Technology.jpg"
