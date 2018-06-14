@@ -6,9 +6,9 @@
         <div class="swiper-wrapper">
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover-responsive" style="background-image: url(<%= asset_path('img-29.jpg') %>)"> 
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover-responsive" style="background-image: url(<%= asset_path('Mountains.jpg') %>)"> 
+                    <div style="height: 100%; width: 100%; object-fit: contain">
                     <img class="img-responsive"; background-size: 100% auto>
-                    <img style="height: 100%; width: 100%; object-fit: contain"/> 
                        <div class="container d-flex align-items-center no-padding">
                         <div class="col">
                             <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
@@ -22,14 +22,15 @@
                     </div>
                 </div>
             </div>
-        </h2>
+        </div>
+    </h2>
    
 
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover-responsive" style="background-image: url(<%= asset_path('img-29.jpg') %>)"> 
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover-responsive" style="background-image: url(<%= asset_path('Sunrise.jpg') %>)"> 
+                    <div style="height: 100%; width: 100%; object-fit: contain">
                     <img class="img-responsive"; background-size: 100% auto>
-                    <img style="height: 100%; width: 100%; object-fit: contain"/> 
                     <div class="container d-flex align-items-center no-padding">
                         <div class="col">
                             <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
@@ -43,20 +44,21 @@
                     </div>
                 </div>
             </div>
-        </h2>
+        </div>
+    </h2>
   
 
             <!-- Slide -->
             <div class="swiper-slide" data-swiper-autoplay="5000">
-                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover-responsive" style="background-image: url(<%= asset_path('img-29.jpg') %>)"> 
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover-responsive" style="background-image: url(<%= asset_path('Sunset.jpg') %>)"> 
+                    <div style="height: 100%; width: 100%; object-fit: contain">
                     <img class="img-responsive"; background-size: 100% auto>
-                    <img style="height: 100%; width: 100%; object-fit: contain"/> 
                     <div class="container d-flex align-items-center no-padding">
                         <div class="col">
                             <div class="row row-cols-xs-spaced align-items-center py-5 text-center justify-content-center">
                                 <div class="col-lg-8">
                                     <h2 class="heading heading-xl strong-700 c-white text-uppercase animated" data-animation-in="zoomIn" data-animation-onetime="false" data-animation-delay="200">
-                                        <span style="opacity: 0.4;">Voir plus</span>
+                                        <span style="opacity: 0.4;">Etudier</span>
                                     </h1>
                                 </div>
                             </div>
@@ -65,7 +67,8 @@
                 </div>
             </div>
         </div>
-    </h2>
+    </div>
+</h2>
 
 
         <!-- Add Pagination -->
@@ -114,10 +117,13 @@
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
 
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Allemagne").id %>">
                                                 <img src="<%= asset_path("country/Allemagne.jpg") %>">
+
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -137,10 +143,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Autriche").id %>">
                                                 <img src="<%= asset_path("country/Autriche.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -162,10 +170,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Belgique").id %>">
                                                 <img src="<%= asset_path("country/Belgique.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -186,10 +196,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Bulgarie").id %>">
                                                 <img src="<%= asset_path("country/Bulgarie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -211,10 +223,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "France").id %>">
                                                 <img src="<%= asset_path("country/France.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -235,10 +249,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Grèce").id %>">
                                                 <img src="<%= asset_path("country/Grèce.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -259,10 +275,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Hongrie").id %>">
                                                 <img src="<%= asset_path("country/Hongrie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -283,10 +301,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Irlande").id %>">
                                                 <img src="<%= asset_path("country/Irlande.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -310,10 +330,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Italie").id %>">
                                                 <img src="<%= asset_path("country/Italie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -335,10 +357,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Lettonie").id %>">
                                                 <img src="<%= asset_path("country/Lettonie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -359,10 +383,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Lituanie").id %>">
                                                 <img src="<%= asset_path("country/Lituanie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -383,10 +409,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Norvège").id %>">
                                                 <img src="<%= asset_path("country/Norvège.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -409,10 +437,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Pays-Bas").id %>">
                                                 <img src="<%= asset_path("country/Pays-Bas.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -432,10 +462,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Pologne").id %>">
                                                 <img src="<%= asset_path("country/Pologne.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -457,10 +489,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Portugal").id %>">
                                                 <img src="<%= asset_path("country/Portugal.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -482,10 +516,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "République Tchèque").id %>">
                                                 <img src="<%= asset_path("country/République-Tchèque.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -509,10 +545,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Roumanie").id %>">
                                                 <img src="<%= asset_path("country/Roumanie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -532,10 +570,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Royaume-Uni").id %>">
                                                 <img src="<%= asset_path("country/Royaume-Uni.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -557,10 +597,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Serbie").id %>">
                                                 <img src="<%= asset_path("country/Serbie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -580,10 +622,12 @@
                                     <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Slovaquie").id %>">
                                                 <img src="<%= asset_path("country/Slovaquie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -605,10 +649,12 @@
                                         <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Slovénie").id %>">
                                                 <img src="<%= asset_path("country/Slovénie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -629,10 +675,12 @@
                                         <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Suède").id %>">
                                                 <img src="<%= asset_path("country/Suède.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -653,10 +701,12 @@
                                         <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Suisse").id %>">
                                                 <img src="<%= asset_path("country/Suisse.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -676,10 +726,12 @@
                                         <div class="masonry-item col-md-6 col-lg-3 europe">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="/countries/<%= Country.find_by(name: "Ukraine").id %>">
                                                 <img src="<%= asset_path("country/Ukraine.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -705,12 +757,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 africa">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%"> 
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Afrique-du-sud.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -731,12 +783,13 @@
                                 <div class="masonry-item col-md-6 col-lg-3 africa">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                        <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Egypte.jpg") %>">
 
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -757,12 +810,13 @@
                                 <div class="masonry-item col-md-6 col-lg-3 africa">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Maroc.jpg") %>">
 
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -783,13 +837,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 africa">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Nigeria.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -815,12 +868,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Argentine.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -843,13 +896,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Brésil.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -869,12 +921,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Canada.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -896,12 +948,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Colombie.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -928,12 +980,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Cuba.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -954,12 +1006,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Etats-Unis.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -980,12 +1032,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Mexique.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1007,12 +1059,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 america">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Vénézuela.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1038,11 +1090,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Arabie-Saoudite.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1062,12 +1115,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Chine.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1087,12 +1140,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Corée-du-sud.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1115,12 +1168,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Emirats-Arabes-Unis.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1143,12 +1196,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Hong-Kong.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1171,12 +1224,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Inde.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1198,12 +1251,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Indonésie.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1212,8 +1265,7 @@
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Indonésie</a>
                                                     <span class="clearfix"></span>
 
-
-                                                    
+                                                  
 
 
                                                 </div>
@@ -1229,12 +1281,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Israel.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1259,12 +1311,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Japon.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1286,12 +1338,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Malaisie.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1313,21 +1365,19 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Philippines.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Philippines</a>
 
                                                     <span class="clearfix"></span>
-
-
-                                                    
+                                                 
 
 
                                                 </div>
@@ -1343,19 +1393,19 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Russie.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
                                                     <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Russie</a>
                                                     <span class="clearfix"></span>
 
-                                                    
+                                                   
 
                                                 </div>
                                             </div>
@@ -1372,12 +1422,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 Asie">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Singapour.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1399,12 +1449,12 @@
                                 <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Taïwan.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1426,12 +1476,12 @@
                             <div class="masonry-item col-md-6 col-lg-3 asia">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
-
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="#">
                                                 <img src="<%= asset_path("country/Thaïlande.jpg") %>">
-
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1457,11 +1507,13 @@
                                 <div class="masonry-item col-md-6 col-lg-3 océanie">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="/countries/<%= Country.find_by(name: "Australie").id %>">
 
                                                 <img src="<%= asset_path("country/Australie.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1482,11 +1534,13 @@
                                 <div class="masonry-item col-md-6 col-lg-3 océanie">
                                     <div class="block block-image-holder animate-this animate--hover-show-btn">
                                         <div class="block-image">
+                                            <div style="max-height: 340px; width: 100%">
                                             <a href="/countries/<%= Country.find_by(name: "Nouvelle-Zélande").id %>">
 
                                                 <img src="<%= asset_path("country/Nouvelle-Zélande.jpg") %>">
                                             </a>
                                         </div>
+                                    </div>
                                         <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
                                             <div class="block-info-inner animate-translate--up">
                                                 <div class="text-center">
@@ -1805,7 +1859,7 @@
                         </div>
                     </section>
 
-                    <section class="slice-xl bg-base-1">
+                    <section class="slice-l bg-base-1">
                         <div class="container sct-inner">
                             <div class="row justify-content-center">
                                 <div class="col-lg-6">
