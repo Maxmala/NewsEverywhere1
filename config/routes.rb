@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/profil", to: 'profile_pages#index', as: :user_root
   devise_for :users
   get '/contact', to: "home#contact", as: "contact"
+ 
 
 
   mount ForestLiana::Engine => '/forest'

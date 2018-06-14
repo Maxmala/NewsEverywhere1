@@ -7,7 +7,7 @@ class CountriesController < ApplicationController
     @country = Country.find_by(id: params[:id])
   	@name = @country.name
     @name1 = @country.continent
-    @articles = @country.articles.limit(10)
+    @articles = @country.articles.shuffle.take(20)
     image
    	EasyTranslate.api_key = ENV['EASY_TRANSLATE']
  

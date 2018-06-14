@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
 
     @category = Category.find_by(id: params[:id])
   	@name = @category.name
-  	@articles = @category.articles.limit(10)
+  	@articles = @category.articles.shuffle.take(20)
 
     EasyTranslate.api_key = ENV['EASY_TRANSLATE']
  	image
