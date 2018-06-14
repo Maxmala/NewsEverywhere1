@@ -2,8 +2,7 @@ class ProfilePagesController < ApplicationController
 	before_action :authenticate_user!
 
   def index
-  @categorie = Category.all
-  puts params[:interests]
+
   end
 
   def create
@@ -24,6 +23,15 @@ class ProfilePagesController < ApplicationController
     @categories.each do |id|
 
     @user.categories << Category.where(id: id)
+  end
+    @user.countries.destroy_all
+
+    @countries = params[:user][:country_ids]
+    @countries.each do |id|
+
+    @user.countries << Country.where(id: id)
+
+
     end
   end
 end
