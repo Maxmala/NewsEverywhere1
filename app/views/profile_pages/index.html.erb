@@ -2,18 +2,5 @@
 
 
 
-<tbody>
-	<form>
-      <% Category.all.each do |category| %>
-      <tr>
-        <th><%= check_box_tag "interests[]", category.id %> <%= category.nameFr %></th>
-         <% end %>
-      </tr>
 
-      
-	<input type="submit" value="Enregistrer" class="btn btn-warning" name="">
-
-      </form>
-
-    </tbody>
 
