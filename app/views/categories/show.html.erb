@@ -91,11 +91,13 @@
                                             <%= EasyTranslate.translate(article[:description], :to => :french) %>
                                         </p>
 
-                                        <a href="article_path" class="btn btn-styled btn-base-1 btn-circle mt-4">Lire</a>
+                                        <a> <% @url = article[:url]%> </a>
+                                      <p> <a type="button" href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @url + "&edit-text=&act=url"%>" target="_blank">Article</a>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-sm-12 col-12"><a href="article_path" >
+                                <div class="col-lg-6 col-sm-12 col-12">
+                                    <a href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @url + "&edit-text=&act=url"%>" >
                                     <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
                                 </div>
                             </div>
