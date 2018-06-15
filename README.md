@@ -26,7 +26,7 @@
 
 # But de l´exercice
 
-Pour ce Vendredi 8 Juin 2018 dans le cadre du Projet Final de la formation The Hacking Project, nous avons crée un site Web qui présente toutes les actualités des différents pays en les traduisant simultanément. 
+Dans le cadre du Projet Final de la formation The Hacking Project, nous avons crée un site Web qui présente toutes les actualités des différents pays en les traduisant simultanément. 
 
 
 Notre cahier des charges :
