@@ -20,7 +20,7 @@ def country
         Country.create(name: "Chine", shortcode: "cn", continent: "Asie")
         Country.create(name: "Colombie", shortcode: "co", continent: "Amérique")
         Country.create(name: "Cuba", shortcode: "cu", continent: "Amérique")
-        Country.create(name: "République Tchèque", shortcode: "cz", continent: "Afrique")
+        Country.create(name: "République Tchèque", shortcode: "cz", continent: "Europe")
         Country.create(name: "Egypte", shortcode: "eg", continent: "Afrique")
         Country.create(name: "France", shortcode: "fr", continent: "Europe")
         Country.create(name: "Allemagne", shortcode: "de", continent: "Europe")

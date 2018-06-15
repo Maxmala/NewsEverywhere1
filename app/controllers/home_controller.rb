@@ -15,6 +15,7 @@ class HomeController < ApplicationController
     req = open(url)
     @response_body = JSON.parse(req.read)
     EasyTranslate.api_key = ENV['EASY_TRANSLATE']
+    
 
   end
 
