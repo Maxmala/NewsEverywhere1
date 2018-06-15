@@ -1,14 +1,21 @@
 class CategoriesController < ApplicationController
 
 
-  def show
+  def show()
   	#afficher params id
-
+    @country = Country.new
     @category = Category.find_by(id: params[:id])
-  	@name = @category.name
-  	@articles = @category.articles.limit(10)
+  	@name = @category.nameFr
+    @articles = []
+    if params[:country] != nil
+        @articles = Article.where(country_id: params[:country][:id], category_id: params[:id])
+    
+  else
+    @articles = @category.articles.limit(20)
+    
+  end    
 
-    EasyTranslate.api_key = ENV['EASY_TRANSLATE']
+  EasyTranslate.api_key = ENV['EASY_TRANSLATE']
  	image
 
   end

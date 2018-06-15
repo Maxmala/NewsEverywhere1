@@ -1,29 +1,30 @@
 class CountriesController < ApplicationController
   
   
-  def show
+  def show()
   	#afficher params id
     @category = Category.new
     @country = Country.find_by(id: params[:id])
+    @articles = []
+    if params[:category] != nil
+        @articles = Article.where(category_id: params[:category][:id], country_id: params[:id])
+    
+  else
+    @articles = @country.articles.limit(20)
+    
+  end    
   	@name = @country.name
     @name1 = @country.continent
-    @articles = @country.articles.take(20)
+
     image
    	EasyTranslate.api_key = ENV['EASY_TRANSLATE']
+    
  
 
   end
 
-  def show_filter
-    @category = Category.find(params[:category][:id])
-    @country = Country.find(params[:id])
-    @articles = Article.where(category_id: params[:category][:id], country_id: params[:id])
-    @name = @country.name
-    @name1 = @country.continent
-    image
-    EasyTranslate.api_key = ENV['EASY_TRANSLATE']
+  
 
-  end
 
   private
 	def image
@@ -55,9 +56,7 @@ class CountriesController < ApplicationController
   end
 
 
-  def index
 
-  end
 
 
 

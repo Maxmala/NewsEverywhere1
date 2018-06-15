@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 
   get "/index", to: "home#index" , as: "show"
   get "/countries/:id", to:  "countries#show", as: "country"
-  post "/countries/:id", to:  "countries#show_filter", as: "categories"
+  post "/countries/:id", to:  "countries#show", as: "categories"
   get "/categories/:id", to:  "categories#show", as: "category"
+  post "/categories/:id", to:  "categories#show", as: "countries"
+
  
   get 'profil', to: "profile_pages#index", as: "profil"
   get 'profil/settings', to: "profile_pages#settings", as: "settings"
