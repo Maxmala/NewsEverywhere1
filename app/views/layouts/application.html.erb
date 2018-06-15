@@ -6,18 +6,17 @@
     <title><%= content_for?(:title) ? yield(:title) : "Infos sans Frontiere" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "News" %>">
 
-   
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
-    <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+           <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+           <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <%= render "layouts/navbar" %>
 
 <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet"> 
-   
-   <%= render "layouts/navbar" %>
+ 
+
   </head>
 
   <body>

@@ -1,4 +1,56 @@
-<h1>ProfilePages#index</h1>
+ 
+<section class="slice sct-color-1" >
+	<div class="container">
+	<div class="section-title section-title--style-1 text-center">
+		<h3 class="section-title-inner heading-2 strong-400">Voici votre sélection d'articles du jour</h3>
+		<h3 class="section-title-inner heading-5 strong-400"><%= link_to 'Vous pouvez régler vos préférences de selection ici', settings_path %></h3>
+	</div>
+	</div>
+<div class="container">
+ 
+    <% @articles.each do |id|  %>
+    <% @article = Article.find_by(id: id) %>
+    <section class="slice sct-color-1">
+                        <div class="container">
+                            <div class="section-title section-title--style-1 text-center">
+                                <h4 class="heading heading-xs text-uppercase c-base-1 strong-600"><%= Category.find(@article.category_id).nameFr %></h4>
+                                <h4 class="heading heading-xs text-uppercase c-base-1 strong-600"><%= Country.find(@article.country_id).name %></h4>
+                                <h3 class="section-title-inner heading-2 strong-500">
+                                    <span><%= @article.source %></span>
+
+                                </h3>
+                                <span class="section-title-delimiter clearfix d-none"></span>
+                            </div>
+
+                            <span class="clearfix"></span>
+                            <span class="space-xs-md"></span>
+
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-sm-12 col-12">
+                                    <div class="py-4">
+                                        <ul class="inline-links">
+                                        </ul>
+
+                                        <p class="mt-4">
+                                            <%= EasyTranslate.translate(@article.description, :to => :french) %>
+                                        </p>
+                                        <p> <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @article.url + "&edit-text=&act=url"%>" target="_blank">Article</a>
+                                      </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12 col-12"><a href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @article.url + "&edit-text=&act=url"%>" >
+                                    <img src="<%= @article.urlToImage %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <% end %>
+            </div>
+        </section>
+
+   
+
 
 
 

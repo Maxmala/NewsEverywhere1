@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
-
+gem "jquery-rails"
 gem 'font-awesome-rails'
 gem 'swiper-rails'
 gem 'google-api-client'
@@ -45,7 +45,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0'
 gem 'high_voltage'
-gem 'jquery-rails'
 gem 'therubyracer', :platform=>:ruby
 
 group :production do
