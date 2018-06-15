@@ -1,0 +1,7 @@
+[0] [11:22:48 18-06-15] [LOGGER] -- : checking log files
+[1] [11:22:48 18-06-15] [CORE] -- : log files are checked
+[2] [11:22:48 18-06-15] [CORE] -- : Machine started
+[3] [11:22:48 18-06-15] [CREATE_PROTOCOL] -- : Protocol successfully created
+[4] [11:22:48 18-06-15] [CORE] -- : Processing successfully completed
+[5] [11:22:48 18-06-15] [LOGIN] -- : trying to login
+[6] [11:22:48 18-06-15] [LOGIN] -- : an error detected: Mechanize::ResponseCodeError 403 => Net::HTTPForbidden for https://www.instagram.com/accounts/login/?force_classic_login -- unhandled response ["/home/maxmala/.rvm/gems/ruby-2.5.1/gems/mechanize-2.7.6/lib/mechanize/http/agent.rb:329:in `fetch'", "/home/maxmala/.rvm/gems/ruby-2.5.1/gems/mechanize-2.7.6/lib/mechanize.rb:1323:in `post_form'", "/home/maxmala/.rvm/gems/ruby-2.5.1/gems/mechanize-2.7.6/lib/mechanize.rb:584:in `submit'", "/home/maxmala/.rvm/gems/ruby-2.5.1/gems/mechanize-2.7.6/lib/mechanize/form.rb:271:in `submit'", "/home/maxmala/.rvm/gems/ruby-2.5.1/gems/instabot-0.1.90/lib/instabot/login.rb:17:in `login'", "/home/maxmala/.rvm/gems/ruby-2.5.1/gems/instabot-0.1.90/lib/instabot/core.rb:110:in `intro'", "/home/maxmala/.rvm/gems/ruby-2.5.1/gems/instabot-0.1.90/lib/instabot/core.rb:64:in `initialize'", "instagram.rb:35:in `new'", "instagram.rb:35:in `<main>'"]

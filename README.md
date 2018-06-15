@@ -1,11 +1,11 @@
 
 
-# Infos Sans Frontiere 
+# Infos Sans Frontière 
 -------------
 
 # Introduction : Présentation de l'équipe
 
-## ** WEST COAST MARSEILLE**
+## ** WEST COAST MARSEILLE **
 
 ##- Audrey (@audreycouture)
 
@@ -26,14 +26,14 @@
 
 # But de l´exercice
 
-Pour ce Vendredi 8 Juin 2018 dans le cadre du Projet Final de la formation The Hacking Project, nous avons créer un site Web qui présente toutes les actualités des différents pays en les traduisants en simultanés. 
+Dans le cadre du Projet Final de la formation The Hacking Project, nous avons crée un site Web qui présente toutes les actualités des différents pays en les traduisant simultanément. 
 
 
 Notre cahier des charges :
 
 
 Avec utilisation de la méthode Agile :  
-	1) Realiser un MVP en ligne fonctionel 
+	1) Réaliser un MVP en ligne fonctionel 
 	2) Travail en commun organisé via https://trello.com/
 	3) Suivre une User Stories 
 	4) Donner de la forme à nos pages en intégrant un template WrapBootstrap
@@ -76,11 +76,9 @@ et Tester la Version en Localhost en allant dans ton navigateur sur :
 
 ## Test en ligne:
 
-Aller sur les liens Heroku suivants
+Aller sur le lien Heroku suivant :
 
-
-https://newseverywhere.herokuapp.com
-
+https://infossansfrontiere.herokuapp.com/
 
 
 ------------
@@ -92,10 +90,10 @@ https://newseverywhere.herokuapp.com
 ------------- comment le code a été fait : -------------
 
     1. Nouveau projet Rails : 
-        a. $ rails new boutique
+        a. $ rails new 
         b. Modif du gemfile (pour integration heroku ) 
-    2. Nouveau Repo sur Github
-        a. cd dossier boutique
+    2. Nouveau Repository sur Github
+        a. cd dossier
         b. $ git init 
         c. $ git remote
         d. $ git Add . 
@@ -106,18 +104,18 @@ https://newseverywhere.herokuapp.com
         b. $ git add .
         c. $ git commit -m "heroku"
         d. $ git push heroku master
-        e. Succés avec site en ligne appelé https://newseverywhere.herokuapp.com
+        e. Succès du site en ligne appelé https://infossansfrontiere.herokuapp.com
     4. Créer un compte Mailjet pour les envois de mails 
         a. Créer un fichier .env avec les clées API de Mailjet
-        b. Dans le gitiniore rajouter le .env
+        b. Dans le gitignore rajouter le .env
         c. Sur mailjet, le paramétrer avec le site heroku  
-    5. Paramètrer la base de donner des utilisateurs 
+    5. Paramètrer la base de données des utilisateurs 
         a. $ rails generate scaffold user email:string
         b. $ rails db:migrate
         c. Verif heroku comparabilité avec un nouveau push heroku => ok
         d. $ heroku run rails db:migrate => ok
         e. Affichage des routes users : $ rails routes 
-        f. Vérification en ligne :   https://newseverywhere.herokuapp.com
+        f. Vérification en ligne :   https://infossansfrontiere.herokuapp.com
     6. Configuration des pages en ligne en définissant seulement les routes 
         a. Dans config routes.rb :   
         b. $ verif avec rails routes => ok

@@ -8,15 +8,15 @@ Dotenv.load
 def client
 
     client = Twitter::REST::Client.new do |config|
-        config.consumer_key        = ENV['']
-        config.consumer_secret     = ENV['']
-        config.access_token        = ENV['']
-        config.access_token_secret = ENV['']
+        config.consumer_key        = ENV['API_TWITTER_CONSUMER_KEY']
+        config.consumer_secret     = ENV['API_TWITTER_CONSUMER_KEY_SECRET']
+        config.access_token        = ENV['API_TWITTER_ACCESS_TOKEN']
+        config.access_token_secret = ENV['API_TWITTER_ACCESS_TOKEN_SECRET']
       end
 end
 
 
-topics = ["AFP", "googlenews", "info", "infossansfrontiere", "informatique", "actu", "presse", "news", "Times", "ELPais", "Breking news", "CNN"]
+topics = ["AFP", "googlenews", "infos", "infossansfrontiere", "journaux", "actu", "presse", "news", "Actualités", "ELPais", "Breking news", "CNN"]
 client.filter(track: topics.join(",")) do |object|
   puts object.text if object.is_a?(Twitter::Tweet)
 end
