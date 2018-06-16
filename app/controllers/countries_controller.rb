@@ -2,6 +2,8 @@ class CountriesController < ApplicationController
   
   
   def show()
+    
+
   	#afficher params id
     @category = Category.new
     @country = Country.find_by(id: params[:id])
