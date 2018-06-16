@@ -67,7 +67,7 @@
 
     <%= form_for(@country) do |f| %>
     <%= f.collection_select(:id, Country.all, :id, :name, item_wrapper_class: "block")%>
-    <%= f.button :Filtrer  %>
+    <%= f.button :Filtrer , :class => 'btn btn-primary'  %>
     <% end %>
 </div>
 </section>

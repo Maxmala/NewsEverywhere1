@@ -72,7 +72,7 @@
 
     <%= form_for(@category) do |f| %>
     <%= f.collection_select(:id, Category.all, :id, :nameFr, item_wrapper_class: "block")%>
-    <%= f.button :Filtrer  %>  
+    <%= f.button :Filtrer , :class => 'btn btn-primary'  %>  
     <% end %>
 
 </div>
