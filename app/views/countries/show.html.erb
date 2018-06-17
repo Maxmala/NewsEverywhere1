@@ -110,7 +110,7 @@
                                         <a> <% @url = article[:url]%> </a>
                                       <p>    </a>
                                      
-                                        <% if (params[:id]).include?"4" %>
+                                        <% if (params[:id]) ==="4" %>
 
                                         <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%= @url %>" target="_blank">Article</a>
                                         
@@ -124,9 +124,11 @@
                                       
                                     <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
 
-                                    <% elsif (params[:id]).include?"13" %>
+                                    <% elsif (params[:id]) === "13" %>
                                      <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%= @url %>" target="_blank">Article</a>
                                         
+
+
 
                                     </div>
                                 </div>
@@ -136,9 +138,8 @@
                                     <a href=" <%= @url %>" target="_blank" >
                                       
                                     <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
-
-                                    <% else %>
-                                     <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @url + "&edit-text=&act=url"%>" target="_blank">Article</a>
+                                        <% elsif (params[:id]) != ("13" || "4") %>
+                                        <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @url + "&edit-text=&act=url"%>" target="_blank">Article</a>
                                         
 
                                     </div>
@@ -149,9 +150,6 @@
                                     <a href=" <%="https://translate.google.fr/translate?sl=auto&tl=fr&js=y&prev=_t&hl=fr&ie=UTF-8&u="+ @url + "&edit-text=&act=url"%>" >
                                       
                                     <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
-
-
-
 
 
                                     <% end %>
