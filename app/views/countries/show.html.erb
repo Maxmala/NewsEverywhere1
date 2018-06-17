@@ -110,8 +110,22 @@
                                         <a> <% @url = article[:url]%> </a>
                                       <p>    </a>
                                      
-                                        <% if params[:id] == "4" || "13" %>
+                                        <% if (params[:id]).include?"4" %>
+
                                         <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%= @url %>" target="_blank">Article</a>
+                                        
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12 col-12">
+                                 
+                                    <a href=" <%= @url %>" target="_blank" >
+                                      
+                                    <img src="<%= article[:urlToImage] %>" alt="Image de l'article" class="img-fluid rounded z-depth-3"></a>
+
+                                    <% elsif (params[:id]).include?"13" %>
+                                     <a type="button" class ="btn btn-styled btn-sm btn-base-1 text-uppercase btn-circle" href=" <%= @url %>" target="_blank">Article</a>
                                         
 
                                     </div>
